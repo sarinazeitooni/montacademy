@@ -19,9 +19,9 @@
 
 .form-data-container {
     display: flex;
+    justify-content: space-around;
     flex-direction: row-reverse;
 }
-
 .data-fields input{
     border-radius: 16px;
     padding: 1px 20px 1px 2px;
@@ -31,4 +31,25 @@
     line-height: 21px;
     border: 1px solid #D8D8D8;
     font-family: iranYekan !important;
+}
+.submit{
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 16px;
+    padding: 3px 15px;
+    border: 1px solid #D8D8D8;
+    height: fit-content;
+    background-color: #FFB300;
+}
+#select-label{
+    direction: rtl;
+    font-size: 14px;
+    border: 1px solid #D8D8D8;
+    line-height: 21px;
+    border-radius: 16px;
+    background: white;
+    padding: 1px 20px 1px 2px;
+    font-family: iranYekan;
+    width: 100px;
 }
