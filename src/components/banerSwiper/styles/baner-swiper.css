@@ -1,9 +1,34 @@
-.banner-swiper-container img{
+.banner-swiper-container img {
     width: 100%;
 }
-.swiper-item img{
-}
-.desktop-view{
-}
 .mobile-view{
+    display: none;
+}
+.swiper-wrapper{
+    height: 529px;
+}
+@media screen and (max-width: 768px){
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .swiper-wrapper{
+        height : 403px;
+    }
+}
+.swiper-item img {
+}
+:root {
+    --swiper-navigation-size : 25px;
+}
+
+.swiper-button-prev{
+    cursor: pointer;
+    color: #585858;
+}
+.swiper-button-next {
+    color: #585858;
+    cursor: pointer;
 }
