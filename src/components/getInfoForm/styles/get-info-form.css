@@ -21,38 +21,37 @@
 }
 
 .form-data-container {
+    width: 84%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row-reverse;
 }
-.data-fields input{
+.data-fields input , .data-fields select , .submit{
+    appearance: none;
+    color: #6C6C6C;
     border-radius: 16px;
-    padding: 1px 20px 1px 2px;
+    width: 307px;
+    height: 40px;
+    padding-right: 20px;
     text-align: right;
     outline: none;
     font-size: 14px;
     line-height: 21px;
-    border: 1px solid #D8D8D8;
+    border: none;
     font-family: iranYekan !important;
+}
+.data-fields select .custom-option{
+    /*background: #eceff1;*/
+    padding: 5px 0;
 }
 .submit{
     color: white;
-    font-size: 14px;
-    line-height: 21px;
-    border-radius: 16px;
-    padding: 3px 15px;
-    border: 1px solid #D8D8D8;
+    padding: 9px 0;
+    font-size: 16px;
+    cursor: pointer;
     height: fit-content;
+    width: 240px;
+    text-align: center;
     background-color: #FFB300;
-}
-#select-label{
-    direction: rtl;
-    font-size: 14px;
-    border: 1px solid #D8D8D8;
-    line-height: 21px;
-    border-radius: 16px;
-    background: white;
-    padding: 1px 20px 1px 2px;
-    font-family: iranYekan;
-    width: 100px;
 }

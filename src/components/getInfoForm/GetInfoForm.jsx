@@ -1,8 +1,6 @@
 import React from 'react';
 import './styles/get-info-form.css';
 import texts from "./data/texts";
-import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem';
 const GetInfoForm = () => {
     return (
         <div className='get-info-form-container'>
@@ -15,11 +13,12 @@ const GetInfoForm = () => {
                     <input type='text' placeholder={texts.number}/>
                 </div>
                 <div className='data-fields'>
-                    <TextField id="select" label={texts.selectTitle} value="20" select>
+                    <select>
                         {texts.selectItems.map((item) => {
-                            return (<MenuItem>{item}</MenuItem>)
+                            return (<option className='custom-option'>{item}</option>)
                         })}
-                    </TextField>
+                        <option className='custom-option' selected disabled hidden>{texts.selectTitle}</option>
+                    </select>
                 </div>
                 <div className='data-fields submit'>{texts.submit}</div>
             </div>
