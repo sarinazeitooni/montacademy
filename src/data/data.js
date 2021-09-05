@@ -1,4 +1,4 @@
-const montaCademyClassList = [
+export const montaCademyClassList = [
     {
         index: 1,
         title: "کلاس‌های آنلاین دروس عمومی ویژه کنکور ۱۴۰۱",
@@ -262,9 +262,7 @@ const montaCademyClassList = [
         subject: 'ریاضی',
     }
 ]
-
-
-const montaCademyOptions = [
+export const montaCademyOptions = [
     {title: "آموزش دروس توسط برترین اساتید کشور", index: 1},
     {title: "تثبیت و ارزیابی مباحث تدریس‌شده", index: 2},
     {title: "سنجش وضعیت دانش‌آموز در مقایسه با رقبا", index: 3},
@@ -273,4 +271,4 @@ const montaCademyOptions = [
     {title: "دسترسی کامل به محتوای آموزشی", index: 6},
     {title: "مشاهده سیر پیشرفت دانش‌آموز", index: 7},
     {title: "کاهش هزینه‌های آموزش", index: 8},
-]
+];

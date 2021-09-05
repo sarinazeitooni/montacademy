@@ -1,0 +1,11 @@
+@import 'src/styles/colors/colors';
+.class-container{
+    font-family: iranYekan;
+    .class-title{
+        display: inline-block;
+    }
+    .class-extraTitle{
+        font-size: 20px;
+        color: $extra-title;
+    }
+}
