@@ -4,7 +4,7 @@ import 'swiper/swiper-bundle.css'
 import SwiperCore, {
     Navigation
 } from 'swiper';
-import './styles/baner-swiper.css';
+import './styles/baner-swiper.scss';
 import { v4 as uuidv4 } from 'uuid';
 SwiperCore.use([Navigation]);
 const BannerSwiper = ({images}) => {

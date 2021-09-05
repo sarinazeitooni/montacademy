@@ -1,21 +1,22 @@
+@import "src/styles/colors/colors";
 .login-and-singUp-btn {
     font-family: iranYekan;
     border-radius: 7px;
-    color: #305363;
+    color: $menuItem;
     position: absolute;
     left: 3%;
     opacity: 0.8;
     padding: 5px 10px;
     font-size: 13px;
     margin-top: 8px;
-    border: 1px solid rgb(219, 219, 219);
+    border: 1px solid $btn-border;
     background: none;
-}
-.login-and-singUp-btn:hover{
-
-}
-@media screen and (max-width: 768px){
-    .login-and-singUp-btn{
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+        background: $menuItemBack;
+    }
+    @media screen and (max-width: 768px){
         left: 4%;
     }
 }

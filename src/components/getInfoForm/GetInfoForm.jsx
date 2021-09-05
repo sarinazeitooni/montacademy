@@ -1,6 +1,7 @@
 import React from 'react';
-import './styles/get-info-form.css';
+import './styles/get-info-form.scss';
 import texts from "./data/texts";
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 const GetInfoForm = () => {
     return (
         <div className='get-info-form-container'>
@@ -13,9 +14,10 @@ const GetInfoForm = () => {
                     <input type='text' placeholder={texts.number}/>
                 </div>
                 <div className='data-fields'>
+                    <ArrowDropDownIcon/>
                     <select>
                         {texts.selectItems.map((item) => {
-                            return (<option className='custom-option'>{item}</option>)
+                            return (<option key={item} className='custom-option'>{item}</option>)
                         })}
                         <option className='custom-option' selected disabled hidden>{texts.selectTitle}</option>
                     </select>

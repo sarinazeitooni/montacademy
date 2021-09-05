@@ -1,0 +1,45 @@
+@import "src/styles/colors/colors";
+.header-container{
+  z-index: 10;
+  overflow: hidden;
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 46px;
+  .header{
+    width: 93%;
+    margin: 0 auto;
+    ul{
+      margin: 0;
+      li{
+        font-family: iranYekan;
+        font-size: 13px;
+        float: right;
+        list-style-type: none;
+        padding: 14px 13px;
+        color: $menuItem;
+        cursor: pointer;
+        opacity: 0.8;
+        img{
+          width: 85px;
+          margin-top: -5px;
+          height: 22px;
+        }
+        &:hover{
+          opacity: 1;
+          background:$menuItemBack ;
+        }
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .monta-icon{
+    margin-right: 11%;
+    display: block!important;
+  }
+}

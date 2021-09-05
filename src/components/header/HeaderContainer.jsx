@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from "./Menu";
-import './styles/header-container.css';
+import './styles/header-container.scss';
 import LoginAndSignUp from "./LoginAndSignUp";
 
 const HeaderContainer = () => {
