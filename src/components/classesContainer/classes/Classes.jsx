@@ -3,8 +3,11 @@ import './styles/classes.scss';
 const Classes = ({title , extraTitle , mobileTitle , cards})=>{
     return(
         <div className='class-container'>
-            <h2 className='class-title'>{title}</h2>
-            <span className='class-extraTitle'>{extraTitle}</span>
+            <div className='text-container'>
+                <h2 className='class-title'> {title} </h2>
+                <span className='class-extraTitle'> {extraTitle} </span>
+            </div>
+            <hr className='line'/>
         </div>
     )
 }
