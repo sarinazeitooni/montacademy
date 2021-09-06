@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/classes-container.css';
+import './styles/classes-container.scss';
 import {montaCademyClassList} from "../../data/data";
 import Classes from "./classes/Classes";
 const ClassesContainer = ()=>{

@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/get-info-form.scss';
 import texts from "./data/texts";
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import Popup from "reactjs-popup";
+import Modal from "./modal/Modal";
 const GetInfoForm = () => {
     return (
         <div className='get-info-form-container'>
@@ -22,7 +24,9 @@ const GetInfoForm = () => {
                         <option className='custom-option' selected disabled hidden>{texts.selectTitle}</option>
                     </select>
                 </div>
-                <div className='data-fields submit'>{texts.submit}</div>
+                <Popup trigger={<div className='data-fields submit'>{texts.submit}</div>} position="right center">
+                    <Modal/>
+                </Popup>
             </div>
         </div>
     )
