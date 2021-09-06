@@ -7,7 +7,7 @@ const FooterContainer = () => {
         <div className='footer-container'>
             <div className='columns-container'>
                 <div className='column'>
-                    <img src='https://www.monta.ir/landings/Footer//Monta_Footer.svg'/>
+                    <img className='monta' src='https://www.monta.ir/landings/Footer//Monta_Footer.svg'/>
                 </div>
                 {
                     FooterData.columns.map((item) => {
@@ -22,18 +22,46 @@ const FooterContainer = () => {
                                     })}
                                 </div>}
                                 {item.icons && <div className='icons-container'>
-                                    {item.icons.map((icon)=>{
-                                        return(
-                                            <img src={icon}/>
+                                    {item.icons.map((icon) => {
+                                        return (
+                                            <img className='icon' src={icon}/>
                                         )
                                     })}
-                                </div> }
+                                </div>}
+                                {item.communication && <div className='communication-container'>
+                                    <div className='tel-and-email'>
+                                        <span>
+                                            <img src={item.communication.telIcon}/>
+
+                                            {item.communication.number}
+                                        </span>
+                                        <span>
+                                           <img src={item.communication.mailIcon}/>
+                                            {item.communication.email}
+                                        </span>
+                                    </div>
+                                    <div className='address'>
+                                        <img src={item.communication.locationIcon}/>
+                                        <span>{item.communication.address}</span>
+                                    </div>
+                                </div>}
                             </div>
                         )
                     })
                 }
                 <div className='column'>
                     <img src={FooterData.Enamad}/>
+                </div>
+            </div>
+            <hr/>
+            <div className='footer-bottom-container'>
+                <div className='right'>
+                    {FooterData.footerRightFirst}
+                    <img src={FooterData.heart}/>
+                    {FooterData.footerRightSecond}
+                </div>
+                <div className='left'>
+                    {FooterData.footerleft}
                 </div>
             </div>
         </div>
