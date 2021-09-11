@@ -1,0 +1,51 @@
+@import 'src/styles/colors/colors';
+
+.why-monta-container {
+  width: 66%;
+  background-color: white;
+  border-radius: 20px;
+  margin: 25px auto;
+  font-family: iranYekan;
+  direction: rtl;
+padding: 0 0 10px 0;
+  .why-monta-title {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 40px 25px 20px 0;
+  }
+
+  .why-monta-items {
+    display: flex;
+    justify-content: space-around;
+
+    .item-container {
+      .clicked {
+        background-color: $extra-title;
+      }
+
+      .options {
+        border-radius: 12px;
+        font-size: 14px;
+        background-color: $form-input-border;
+        margin: 15px 0;
+        cursor: pointer;
+
+        .index {
+          color: white;
+          padding-right: 20px;
+        }
+
+        .option {
+          display: inline-block;
+          padding: 10px 25px 10px 40px;
+        }
+      }
+    }
+
+    .item-img {
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+}

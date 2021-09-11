@@ -9,6 +9,8 @@ import FooterContainer from "./components/footer/FooterContainer";
 import {montaCademyClassList} from "./data/data";
 import {schedule} from "./data/data";
 import Schedule from "./components/montaAcademySchedule/Schedule";
+import WhyMonta from "./components/whyMonta/WhyMonta";
+import {montaCademyOptions} from "./data/data";
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
         <GetInfoForm/>
         <ClassesContainer data={montaCademyClassList}/>
         <Schedule title={schedule.title} items={schedule.items}/>
+        <WhyMonta title={montaCademyOptions.title} data={montaCademyOptions.options}/>
         <FooterContainer/>
     </div>
   )

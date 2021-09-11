@@ -263,20 +263,57 @@ export const montaCademyClassList = [
     }
 ]
 export const schedule = {
-    title : 'برنامه‌های مُنتآکادمی کنکور ۱۴۰۱',
-    items : [
+    title: 'برنامه‌های مُنتآکادمی کنکور ۱۴۰۱',
+    items: [
         'https://www.monta.ir/monta-cademy/assets/images/experimental-schedule.svg',
         'https://www.monta.ir/monta-cademy/assets/images/human.png',
         'https://www.monta.ir/monta-cademy/assets/images/math.png'
     ]
 };
-export const montaCademyOptions = [
-    {title: "آموزش دروس توسط برترین اساتید کشور", index: 1},
-    {title: "تثبیت و ارزیابی مباحث تدریس‌شده", index: 2},
-    {title: "سنجش وضعیت دانش‌آموز در مقایسه با رقبا", index: 3},
-    {title: "نظارت و پیگیری فعالیت‌های دانش‌آموز", index: 4},
-    {title: "امکان رفع اشکال و پرسش و پاسخ", index: 5},
-    {title: "دسترسی کامل به محتوای آموزشی", index: 6},
-    {title: "مشاهده سیر پیشرفت دانش‌آموز", index: 7},
-    {title: "کاهش هزینه‌های آموزش", index: 8},
-];
+export const montaCademyOptions =
+    {
+        title: 'چرا منتآکادمی؟',
+        options: [
+            {
+                title: "آموزش دروس توسط برترین اساتید کشور",
+                index: 1,
+                url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-01.png'
+            },
+            {
+                title: "تثبیت و ارزیابی مباحث تدریس‌شده",
+                index: 2,
+                url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-02.png'
+            },
+            {
+                title: "سنجش وضعیت دانش‌آموز در مقایسه با رقبا",
+                index: 3,
+                url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-03.png'
+            },
+            {
+                title: "نظارت و پیگیری فعالیت‌های دانش‌آموز",
+                index: 4,
+                url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-04.png'
+            },
+            {
+                title: "امکان رفع اشکال و پرسش و پاسخ",
+                index: 5,
+                url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-05.png'
+            },
+            {
+                title: "دسترسی کامل به محتوای آموزشی",
+                index: 6,
+                url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-06.png'
+            },
+            {
+                title: "مشاهده سیر پیشرفت دانش‌آموز",
+                index: 7,
+                url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-07.png'
+            },
+            {
+                title: "کاهش هزینه‌های آموزش",
+                index: 8,
+                url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-08.png'
+            },
+        ]
+    }
+;
