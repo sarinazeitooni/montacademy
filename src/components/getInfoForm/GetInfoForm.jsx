@@ -8,6 +8,7 @@ const GetInfoForm = () => {
     return (
         <div className='get-info-form-container'>
             <h3 className='form-title'>{texts.title}</h3>
+            <h3 className='form-title-mobile'>{texts.mobileTitle}</h3>
             <div className='form-data-container'>
                 <div className='data-fields'>
                     <input type='text' placeholder={texts.name}/>

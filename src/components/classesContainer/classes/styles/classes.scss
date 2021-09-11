@@ -10,12 +10,20 @@
   @media screen and (max-width: 768px) {
     margin: 0;
   }
-
+.cards-container-mobile{
+  display: none;
+  @media screen and (max-width: 768px){
+    display: block;
+  }
+}
   .cards-container {
     display: flex;
     justify-content: space-between;
     width: 97%;
     margin : 75px auto 0 auto;
+    @media screen and (max-width: 768px){
+      display: none;
+    }
     .swiper-button-prev , .swiper-button-next {
       color: $navigation-btn;
       cursor: pointer;
@@ -37,6 +45,7 @@
     position: absolute;
     @media screen and (max-width: 768px) {
       margin: 0 15px;
+      padding-right: 0px;
     }
 
     h3 {

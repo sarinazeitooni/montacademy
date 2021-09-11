@@ -7,7 +7,11 @@
   margin: 25px auto;
   font-family: iranYekan;
   direction: rtl;
-padding: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  @media screen and (max-width: 768px) {
+  width: 90%;
+}
+
   .why-monta-title {
     font-size: 20px;
     font-weight: 800;
@@ -17,6 +21,9 @@ padding: 0 0 10px 0;
   .why-monta-items {
     display: flex;
     justify-content: space-around;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
 
     .item-container {
       .clicked {

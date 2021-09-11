@@ -17,12 +17,6 @@
             display: none;
         }
     }
-    .swiper-wrapper{
-        height: 529px;
-        @media screen and (max-width: 768px){
-            height : 403px;
-        }
-    }
     .swiper-button-prev{
         cursor: pointer;
         color:$navigation-btn;

@@ -24,7 +24,7 @@ const FooterContainer = () => {
                                 {item.icons && <div className='icons-container'>
                                     {item.icons.map((icon) => {
                                         return (
-                                            <img alt='monta-icon' className='icon' src={icon}/>
+                                            <img key={icon} alt='monta-icon' className='icon' src={icon}/>
                                         )
                                     })}
                                 </div>}
