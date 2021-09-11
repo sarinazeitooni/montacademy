@@ -262,6 +262,14 @@ export const montaCademyClassList = [
         subject: 'ریاضی',
     }
 ]
+export const schedule = {
+    title : 'برنامه‌های مُنتآکادمی کنکور ۱۴۰۱',
+    items : [
+        'https://www.monta.ir/monta-cademy/assets/images/experimental-schedule.svg',
+        'https://www.monta.ir/monta-cademy/assets/images/human.png',
+        'https://www.monta.ir/monta-cademy/assets/images/math.png'
+    ]
+};
 export const montaCademyOptions = [
     {title: "آموزش دروس توسط برترین اساتید کشور", index: 1},
     {title: "تثبیت و ارزیابی مباحث تدریس‌شده", index: 2},

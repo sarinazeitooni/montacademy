@@ -1,12 +1,11 @@
 import React from 'react';
 import './styles/classes-container.scss';
-import {montaCademyClassList} from "../../data/data";
 import Classes from "./classes/Classes";
-const ClassesContainer = ()=>{
+const ClassesContainer = ({data})=>{
     return(
         <div className='classes-main-container'>
             <div className='classes-container'>
-                {montaCademyClassList.map((item)=>{
+                {data.map((item)=>{
                     return(
                         <React.Fragment key={item.index}>
                             <Classes title={item.title} extraTitle={item.extraTitle} mobileTitle={item.mobileTitle} cards={item.cards}/>

@@ -10,7 +10,6 @@ margin: 0 14px;
     width: 235px;
     height: 233px;
   }
-
   .details-container {
     padding: 10px 25px;
     margin-top: -7px;
@@ -23,7 +22,6 @@ margin: 0 14px;
       font-weight: bold;
       padding: 8px 0;
     }
-
     .price-container {
       display: flex;
       justify-content: space-between;
@@ -35,12 +33,10 @@ margin: 0 14px;
         opacity: 0.9;
         display: flex;
       }
-
       .price {
         color: $teacher-border;
         font-size: 10px;
         position: relative;
-
         &:after {
           position: absolute;
           top: 7px;
@@ -52,7 +48,6 @@ margin: 0 14px;
         }
       }
     }
-
     .session-container {
       display: flex;
       justify-content: space-between;
@@ -64,7 +59,6 @@ margin: 0 14px;
         display: flex;
         font-size: 12px;
       }
-
       .second-price {
         color: $form-input-color;
         font-size: 12px;
