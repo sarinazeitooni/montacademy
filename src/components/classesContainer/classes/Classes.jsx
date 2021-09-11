@@ -1,5 +1,13 @@
 import React from 'react';
 import './styles/classes.scss';
+import ClassCard from "../classCard/ClassCard";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import SwiperCore, {
+    Navigation
+} from 'swiper';
+import {v4 as uuidv4} from "uuid";
+SwiperCore.use([Navigation]);
 const Classes = ({title , extraTitle , mobileTitle , cards})=>{
     return(
         <div className='class-container'>
@@ -9,6 +17,28 @@ const Classes = ({title , extraTitle , mobileTitle , cards})=>{
                 <span className='class-extraTitle'> {extraTitle} </span>
             </div>
             <hr className='line'/>
+            <div className='cards-container'>
+                {cards.length > 4 ?
+                    <Swiper
+                        spaceBetween={1} slidesPerView={4} navigation>
+                        {
+                            cards.map((index)=>{
+                                return(
+                                    <SwiperSlide key={uuidv4()}>
+                                        <ClassCard data={index}/>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                    </Swiper>
+                    :
+                    cards.map((index)=>{
+                            return(
+                                <ClassCard data={index}/>
+                            )
+                        })
+                }
+            </div>
         </div>
     )
 }

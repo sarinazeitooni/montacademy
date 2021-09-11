@@ -7,7 +7,7 @@ const FooterContainer = () => {
         <div className='footer-container'>
             <div className='columns-container'>
                 <div className='column'>
-                    <img className='monta' src='https://www.monta.ir/landings/Footer//Monta_Footer.svg'/>
+                    <img alt='monta-footer' className='monta' src='https://www.monta.ir/landings/Footer//Monta_Footer.svg'/>
                 </div>
                 {
                     FooterData.columns.map((item) => {
@@ -24,24 +24,24 @@ const FooterContainer = () => {
                                 {item.icons && <div className='icons-container'>
                                     {item.icons.map((icon) => {
                                         return (
-                                            <img className='icon' src={icon}/>
+                                            <img alt='monta-icon' className='icon' src={icon}/>
                                         )
                                     })}
                                 </div>}
                                 {item.communication && <div className='communication-container'>
                                     <div className='tel-and-email'>
                                         <span>
-                                            <img src={item.communication.telIcon}/>
+                                            <img alt='communication' src={item.communication.telIcon}/>
 
                                             {item.communication.number}
                                         </span>
                                         <span>
-                                           <img src={item.communication.mailIcon}/>
+                                           <img alt='communication' src={item.communication.mailIcon}/>
                                             {item.communication.email}
                                         </span>
                                     </div>
                                     <div className='address'>
-                                        <img src={item.communication.locationIcon}/>
+                                        <img alt='location' src={item.communication.locationIcon}/>
                                         <span>{item.communication.address}</span>
                                     </div>
                                 </div>}
@@ -50,14 +50,14 @@ const FooterContainer = () => {
                     })
                 }
                 <div className='column'>
-                    <img src={FooterData.Enamad}/>
+                    <img alt='etemad' src={FooterData.Enamad}/>
                 </div>
             </div>
             <hr/>
             <div className='footer-bottom-container'>
                 <div className='right'>
                     {FooterData.footerRightFirst}
-                    <img src={FooterData.heart}/>
+                    <img alt='heart' src={FooterData.heart}/>
                     {FooterData.footerRightSecond}
                 </div>
                 <div className='left'>

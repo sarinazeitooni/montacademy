@@ -7,7 +7,7 @@ export const montaCademyClassList = [
         cards: [
             {
                 index: 1,
-                teacherImageURL: './monta-cademy/assets/images/esi.jpg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/esi.jpg',
                 subject: 'زبان و ادبیات فارسی',
                 teacherName: 'احسان سعیدی نیا',
                 sessionNumber: '50-55',
@@ -16,7 +16,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 1,
-                teacherImageURL: './monta-cademy/assets/images/morad 1.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/morad%201.jpeg',
                 subject: 'زبان انگلیسی',
                 teacherName: 'امیرحسین مراد',
                 sessionNumber: '40-45',
@@ -25,7 +25,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 1,
-                teacherImageURL: './monta-cademy/assets/images/sheikh.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/sheikh.jpeg',
                 subject: 'عربی',
                 teacherName: 'باقر شیخ‌عطار',
                 sessionNumber: '30-35',
@@ -34,7 +34,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 1,
-                teacherImageURL: './monta-cademy/assets/images/dolati.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/dolati.jpeg',
                 subject: 'دین و زندگی',
                 teacherName: 'وحید دولتی',
                 sessionNumber: '45-50',
@@ -52,7 +52,7 @@ export const montaCademyClassList = [
         cards: [
             {
                 index: 2,
-                teacherImageURL: './monta-cademy/assets/images/mamad.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/mamad.jpeg',
                 subject: 'زیست‌شناسی',
                 teacherName: 'محمد شاملو',
                 sessionNumber: '90-95',
@@ -61,7 +61,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 2,
-                teacherImageURL: './monta-cademy/assets/images/mohsen.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/mohsen.jpeg',
                 subject: 'ریاضی',
                 teacherName: 'محسن بهرام‌پور',
                 sessionNumber: '95-100',
@@ -70,7 +70,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 2,
-                teacherImageURL: './monta-cademy/assets/images/morad.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/morad.jpeg',
                 subject: 'شیمی',
                 teacherName: 'مراد مدقالچی',
                 sessionNumber: '75-80',
@@ -79,7 +79,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 2,
-                teacherImageURL: './monta-cademy/assets/images/m&m.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/m&m.jpeg',
                 subject: 'فیزیک پایه',
                 teacherName: 'محمدرضا معدنی',
                 sessionNumber: '50-55',
@@ -88,7 +88,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 2,
-                teacherImageURL: './monta-cademy/assets/images/ghoroghchian.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/ghoroghchian.jpeg',
                 subject: 'فیزیک دوازهم',
                 teacherName: 'محسن قرقچیان',
                 sessionNumber: '55-60',
@@ -97,7 +97,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 2,
-                teacherImageURL: './monta-cademy/assets/images/2nafare.jpg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/2nafare.jpg',
                 subject: 'فیزیک جامع',
                 teacherName: 'قرقچیان و معدنی',
                 sessionNumber: '105-110',
@@ -115,7 +115,7 @@ export const montaCademyClassList = [
         cards: [
             {
                 index: 3,
-                teacherImageURL: './monta-cademy/assets/images/hanif.jpg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/hanif.jpg',
                 subject: 'علوم و فنون ادبی',
                 teacherName: 'حنیف افخمی',
                 sessionNumber: '25-30',
@@ -124,7 +124,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 3,
-                teacherImageURL: './monta-cademy/assets/images/emad.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/emad.jpeg',
                 subject: 'اقتصاد',
                 teacherName: 'عمادالدین اعتمادی',
                 sessionNumber: '30-35',
@@ -133,7 +133,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 3,
-                teacherImageURL: './monta-cademy/assets/images/shahram.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/shahram.jpeg',
                 subject: 'جامعه‌شناسی',
                 teacherName: 'شهرام امامی',
                 sessionNumber: '40-45',
@@ -142,7 +142,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 3,
-                teacherImageURL: './monta-cademy/assets/images/sheikh.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/sheikh.jpeg',
                 subject: 'عربی(عمومی+اختصاصی)',
                 teacherName: 'باقر شیخ عطار',
                 sessionNumber: '55-65',
@@ -151,7 +151,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 3,
-                teacherImageURL: './monta-cademy/assets/images/pezhman.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/pezhman.jpeg',
                 subject: 'ریاضی و آمار',
                 teacherName: 'پژمان لطفی',
                 sessionNumber: '50-55',
@@ -160,7 +160,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 3,
-                teacherImageURL: './monta-cademy/assets/images/2nafare.jpg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/2nafare.jpg',
                 subject: 'ادبیات جامع',
                 teacherName: 'سعیدی نیا، افخمی',
                 sessionNumber: '75-80',
@@ -169,7 +169,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 3,
-                teacherImageURL: './monta-cademy/assets/images/emad.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/emad.jpeg',
                 subject: 'روانشناسی',
                 teacherName: 'عمادالدین اعتمادی',
                 sessionNumber: '25-30',
@@ -178,7 +178,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 3,
-                teacherImageURL: './monta-cademy/assets/images/reza.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/reza.jpeg',
                 subject: 'منطق و فلسفه',
                 teacherName: 'رضا آقاجانی ',
                 sessionNumber: '60-65',
@@ -196,7 +196,7 @@ export const montaCademyClassList = [
         cards: [
             {
                 index: 4,
-                teacherImageURL: './monta-cademy/assets/images/rezaii.png',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/rezaii.png',
                 subject: 'حسابان',
                 teacherName: 'علیرضا رضایی',
                 sessionNumber: '75-80',
@@ -205,7 +205,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 4,
-                teacherImageURL: './monta-cademy/assets/images/morad.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/morad.jpeg',
                 subject: 'شیمی',
                 teacherName: 'مراد مدقالچی ',
                 sessionNumber: '75-80',
@@ -215,7 +215,7 @@ export const montaCademyClassList = [
             {
 
                 index: 4,
-                teacherImageURL: './monta-cademy/assets/images/ghoroghchian.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/ghoroghchian.jpeg',
                 subject: 'فیزیک دوازهم',
                 teacherName: 'محسن قرقچیان',
                 sessionNumber: '55-60',
@@ -224,7 +224,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 4,
-                teacherImageURL: './monta-cademy/assets/images/m&m.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/m&m.jpeg',
                 subject: 'فیزیک پایه',
                 teacherName: 'محمدرضا معدنی',
                 sessionNumber: '50-55',
@@ -233,7 +233,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 4,
-                teacherImageURL: './monta-cademy/assets/images/2nafare.jpg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/2nafare.jpg',
                 subject: 'فیزیک جامع',
                 teacherName: 'قرقچیان و معدنی',
                 sessionNumber: '105-110',
@@ -242,7 +242,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 4,
-                teacherImageURL: './monta-cademy/assets/images/ata.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/ata.jpeg',
                 subject: 'گسسته',
                 teacherName: 'عطا صادقی ',
                 sessionNumber: '75-80',
@@ -251,7 +251,7 @@ export const montaCademyClassList = [
             },
             {
                 index: 4,
-                teacherImageURL: './monta-cademy/assets/images/ebi.jpeg',
+                teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/ebi.jpeg',
                 subject: 'هندسه',
                 teacherName: 'رضا ابراهیمی',
                 sessionNumber: '75-80',
