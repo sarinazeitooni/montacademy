@@ -10,15 +10,18 @@ const ClassCard = ({data}) => {
                 <div className='course-name'>
                     {data.subject}
                 </div>
-                <div className='price-container'>
-                    <div className='name'><img alt='profile' src={icons.profile}/> {data.teacherName} </div>
-                    <div className='price'>{data.priceWithOutOff}تومان</div>
-                </div>
-                <div className='session-container'>
-                    <div className='session'><img alt='session' src={icons.sessions}/> {data.sessionNumber} جلسه </div>
-                    <div className='second-price'>
-                        <span className='second-price-num'> {data.priceWithOff} </span>
-                        تومان
+                <div className='container'>
+                    <div className='name-session-container'>
+                        <div className='name'><img alt='profile' src={icons.profile}/><span> {data.teacherName} </span></div>
+                        <div className='session'><img alt='session' src={icons.sessions}/><span> {data.sessionNumber} جلسه </span></div>
+
+                    </div>
+                    <div className='price-container'>
+                        <div className='price'>{data.priceWithOutOff}تومان</div>
+                        <div className='second-price'>
+                            <span className='second-price-num'> {data.priceWithOff} </span>
+                            <span>تومان</span>
+                        </div>
                     </div>
                 </div>
             </div>

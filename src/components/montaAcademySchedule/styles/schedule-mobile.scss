@@ -1,16 +1,52 @@
 @import 'src/styles/colors/colors';
+@media screen and (max-width:768px){
+  :root {
+    --swiper-navigation-size: 13px;
+  }
+}
+.submit-buy{
+  background-color: $submit-btn;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 16px;
+  outline: none;
+  display: block;
+  margin: 0 auto 26px auto;
+  padding : 12px 62px;
+  font-family: iranYekan;
+  width: 90%;
+}
 .schedule-mobile-container {
   background-color: white;
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
   border-radius: 20px;
-  .title{
-
+  font-family: iranYekan;
+  direction: rtl;
+  padding: 15px;
+a{
+  text-decoration: none;
+}
+  .title {
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 20px;
   }
-  .subtitle{
 
+  .subtitle {
+    white-space: nowrap;
+    font-size: 9.5px;
+    margin-bottom: 18px;
   }
-  .get-btn{
-    border-radius: 20px;
+
+  .get-btn {
+    text-align: center;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 16px;
+    border: 1px solid $submit-btn;
+    color: $submit-btn;
   }
 }

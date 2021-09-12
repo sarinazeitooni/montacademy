@@ -1,6 +1,6 @@
 import HeaderContainer from "./components/header/HeaderContainer";
 import './styles/fonts/fonts.css';
-import './styles/main/main.css';
+import './styles/main/main.scss';
 import BannerSwiper from "./components/banerSwiper/BannerSwiper";
 import images from "./components/banerSwiper/data/images/images";
 import GetInfoForm from "./components/getInfoForm/GetInfoForm";
