@@ -47,7 +47,7 @@
         }
         .data-fields{
             position: relative;
-            input,select{
+            input,select,svg{
                 @media screen and (max-width: 768px) {
                     display: none;
                 }
@@ -76,7 +76,7 @@
                 top: 15%;
             }
         }
-        .submit{
+        .submit-mobile , .submit{
             color: white;
             padding: 9px 0;
             font-size: 16px;
@@ -86,8 +86,18 @@
             width: 240px;
             text-align: center;
             background-color: $submit-btn;
+        }
+        .submit{
             @media screen and (max-width: 768px) {
                 margin: 0 auto;
+                display: none;
+            }
+        }
+        .submit-mobile{
+            display: none;
+            @media screen and (max-width: 768px) {
+                margin: 0 auto;
+                display: block;
             }
         }
     }
