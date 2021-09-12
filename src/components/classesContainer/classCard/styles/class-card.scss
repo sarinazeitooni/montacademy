@@ -57,6 +57,7 @@
           opacity: 0.9;
           margin: 0 0 20px 0;
           display: flex;
+          white-space: nowrap;
           @media screen and (max-width:768px){
             margin: 0 0 10px 0;
             display: inline;
@@ -113,7 +114,7 @@
         .second-price {
           color: $form-input-color;
           font-size: 12px;
-
+          white-space: nowrap;
           .second-price-num {
             color: $second-price;
           }
