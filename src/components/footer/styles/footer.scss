@@ -7,6 +7,9 @@
   hr {
     width: 70%;
     opacity: 0.17;
+    @media screen and (max-width:768px){
+      width: 90%;
+    }
   }
   .footer-bottom-container {
     font-size: 12px;
@@ -16,11 +19,19 @@
     grid-template-columns: 50% 50%;
     color: $footer;
     line-height: 30px;
+    @media screen and (max-width:768px){
+      display: block;
+      width: 90%;
+      line-height: 20px;
+    }
     .right {
       text-align: center;
     }
     .left {
       text-align: left;
+      @media screen and (max-width:768px){
+        text-align: center;
+      }
     }
   }
   .columns-container {
@@ -32,34 +43,95 @@
     justify-content: space-around;
     @media screen and (max-width:768px){
       flex-direction: column;
+      width: 92%;
+    }
+    .etemad{
+      @media screen and (max-width:768px){
+        display: none;
+      }
     }
     .column {
+      @media screen and (max-width:768px){
+        &:nth-child(4){
+          display: flex;
+          justify-content: space-between;
+        }
+      }
       .monta{
         width: 75px;
         margin-top: 28px;
+        @media screen and (max-width:768px){
+          display: none;
+        }
+      }
+      .monta-mobile{
+        display: none;
+        @media screen and (max-width:768px){
+          display: block;
+          margin-bottom: 25px;
+        }
       }
       .column-title {
         margin-bottom: 10px;
         color: $footer;
         font-weight: bold;
         font-size: 15px;
+        @media screen and (max-width:768px){
+         display: none;
+        }
+      }
+      .column-mobile{
+        display: none;
+        img{
+          width: 30px;
+          height: 45px;
+        }
+        @media screen and (max-width:768px){
+          display: block;
+        }
+      }
+      .column-title-mobile{
+        display: none;
+        font-size: 11px;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width:768px){
+          display: flex;
+        }
       }
       .links-container {
         font-size: 12px;
         display: grid;
         margin-right: -10px;
         grid-template-columns: auto auto;
+        @media screen and (max-width:768px){
+          display: flex;
+          margin: 0 auto;
+          justify-content: space-between;
+        }
         .link {
           padding:9px 5px;
+          @media screen and (max-width:768px){
+            font-size: 10px;
+            &:nth-child(4){
+              display: none;
+            }
+          }
         }
       }
       .icons-container {
         margin-right: -9px;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:768px){
+          margin-right: -40px;
+        }
         .icon {
           width: 23px;
           margin: 13px 8px;
+          @media screen and (max-width:768px){
+            width: 16px;
+          }
         }
       }
       .communication-container {
@@ -67,14 +139,22 @@
         margin-top: 25px;
         margin-right: -25px;
         .tel-and-email {
+          @media screen and (max-width:768px){
+            margin-bottom: 30px;
+          }
           img{
             padding: 0px 15px;
+            margin: 0 0 -3px 0;
           }
         }
         .address {
           margin-top: 15px;
           width: 401px;
           display: flex;
+          @media screen and (max-width:768px){
+            margin-bottom: 30px;
+            font-size: 13px;
+          }
           img{
             display: flex;
             align-self: flex-start;
@@ -82,6 +162,9 @@
           }
           span{
             line-height: 25px;
+            @media screen and (max-width:768px){
+              width: 70%;
+            }
           }
         }
       }
