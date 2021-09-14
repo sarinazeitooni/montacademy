@@ -4,9 +4,18 @@ export const texts = {
     mobileInput : 'شماره موبایل',
     selectTitle : 'رشته تحصیلی',
     selectOptions : [
-        'ریاضی',
-        'تجربی',
-        'انسانی'
+        {
+            text : 'ریاضی',
+            value : '60'
+        },
+        {
+            text : 'تجربی',
+            value : '61'
+        },
+        {
+            text : 'انسانی',
+            value : '62'
+        }
     ],
     submit : 'ثبت درخواست مشاوره',
     cancel : 'انصراف'
