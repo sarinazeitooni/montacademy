@@ -34,7 +34,9 @@ const Classes = ({title , extraTitle , mobileTitle , cards})=>{
                     :
                     cards.map((index)=>{
                             return(
-                                <ClassCard data={index}/>
+                                <React.Fragment key={uuidv4()}>
+                                    <ClassCard data={index}/>
+                                </React.Fragment>
                             )
                         })
                 }
