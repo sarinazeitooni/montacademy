@@ -10,31 +10,31 @@ const GetInfoForm = () => {
     const [name,setName] = useState('');
     const [number,setNumber] = useState('');
     const [option , setOption] = useState(0);
-    const [numberClass , setNumberClass] = useState('item');
-    const [nameClass , setNameClass] = useState('item');
+    const [numberClass , setNumberClass] = useState('');
+    const [nameClass , setNameClass] = useState('');
     function ChangeHandler(field , value){
         field(value.target.value);
     }
     function Validation(e){
         if(name===''){
-            setNameClass('item error');
+            setNameClass('error');
             if(number==='' || number.length > 11 || number.length < 11){
-                setNumberClass('item error');
+                setNumberClass('error');
             }else{
-                setNumberClass('item');
+                setNumberClass('');
             }
         }else{
             if(number==='' || number.length > 11 || number.length < 11){
-                setNumberClass(' item error');
+                setNumberClass('error');
             }else{
-                setNumberClass('item');
+                setNumberClass('');
                         Submit();
                         setName('');
                         setNumber('');
                         setOption(0);
 
             }
-                setNameClass('item');
+                setNameClass('');
         }
     }
     function Submit(){

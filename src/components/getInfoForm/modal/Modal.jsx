@@ -16,23 +16,23 @@ function Modal({show, close}) {
     }
     function Validation(e){
         if(name===''){
-            setNameClass('error');
+            setNameClass('item error');
             if(number==='' || number.length > 11 || number.length < 11){
-                setNumberClass('error');
+                setNumberClass('item error');
             }else{
-                setNumberClass('');
+                setNumberClass('item');
             }
         }else{
             if(number==='' || number.length > 11 || number.length < 11){
-                setNumberClass('error');
+                setNumberClass('item error');
             }else{
-                setNumberClass('');
+                setNumberClass('item');
                 Submit();
                 setName('');
                 setNumber('');
                 setOption(0);
             }
-            setNameClass('');
+            setNameClass('item');
         }
     }
     function Submit() {
