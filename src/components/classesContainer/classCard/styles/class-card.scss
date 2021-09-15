@@ -5,25 +5,34 @@
   border-radius: 20px;
   border: 1px solid $form-input-border;
   margin: 0 14px;
-  @media screen and (max-width:768px){
+  @media screen and (max-width: 768px) {
     margin: 75px 6px 0 6px;
   }
+  @media screen and (max-width: 1024px) {
+    margin: 0 5px;
+  }
+
   .teacher-img {
     border-radius: 30px;
     width: 235px;
     height: 233px;
-    @media screen and (max-width:768px){
+    @media screen and (max-width: 768px) {
       width: 128px;
       height: 127px;
     }
+    @media screen and (max-width: 1024px) {
+      width: 220px;
+      height: 218px;
+    }
   }
+
   .details-container {
     padding: 10px 25px;
     margin-top: -7px;
     background-color: $teacher-detail-back;
     border-top: 1px solid $teacher-border;
     border-radius: 0 0 20px 20px;
-    @media screen and (max-width:768px){
+    @media screen and (max-width: 768px) {
       padding: 5px;
     }
 
@@ -31,26 +40,29 @@
       font-size: 16px;
       font-weight: bold;
       padding: 8px 0;
-      @media screen and (max-width:768px){
+      @media screen and (max-width: 768px) {
         font-size: 11px;
         font-weight: normal;
         text-align: center;
       }
     }
-    .container{
+
+    .container {
       display: flex;
       justify-content: space-between;
-      @media screen and (max-width:768px){
+      @media screen and (max-width: 768px) {
         flex-direction: column;
       }
+
       .name-session-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 10px 0;
-        @media screen and (max-width:768px){
+        @media screen and (max-width: 768px) {
           padding: 0;
         }
+
         .name {
           color: $navigation-btn;
           font-size: 12px;
@@ -58,46 +70,50 @@
           margin: 0 0 20px 0;
           display: flex;
           white-space: nowrap;
-          @media screen and (max-width:768px){
+          @media screen and (max-width: 768px) {
             margin: 0 0 10px 0;
             display: inline;
             text-align: center;
-            img{
+            img {
               margin-bottom: -5px;
             }
-            span{
+            span {
               white-space: nowrap;
             }
           }
         }
+
         .session {
           opacity: 0.9;
           color: $navigation-btn;
           display: flex;
           font-size: 12px;
-          @media screen and (max-width:768px){
+          @media screen and (max-width: 768px) {
             text-align: center;
             display: inline;
-            img{
+            img {
               margin-bottom: -5px;
             }
           }
         }
       }
+
       .price-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 10px 0;
         text-align: left;
-        @media screen and (max-width:768px){
+        @media screen and (max-width: 768px) {
           text-align: center;
           padding: 10px 0;
         }
+
         .price {
           color: $teacher-border;
           font-size: 10px;
           position: relative;
+
           &:after {
             position: absolute;
             top: 7px;
@@ -106,16 +122,30 @@
             height: 1px;
             background-color: $teacher-border;
             content: ' ';
-            @media screen and (max-width:768px){
+            @media screen and (max-width: 768px) {
+              width: 30%;
+              right: 70px;
+            }
+            @media screen and (max-width: 425px) {
+              width: 40%;
+              right: 50px;
+            }
+            @media screen and (max-width: 375px) {
+              width: 45%;
+              right: 40px;
+            }
+            @media screen and (max-width: 320px) {
               width: 50%;
               right: 30px;
             }
           }
         }
+
         .second-price {
           color: $form-input-color;
           font-size: 12px;
           white-space: nowrap;
+
           .second-price-num {
             color: $second-price;
           }

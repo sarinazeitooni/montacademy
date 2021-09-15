@@ -41,9 +41,9 @@ const Classes = ({title , extraTitle , mobileTitle , cards})=>{
                         })
                 }
             </div>
-            <div className='cards-container-mobile'>
+            <div className='cards-container-768'>
                     <Swiper
-                        spaceBetween={1} slidesPerView={2} navigation>
+                        spaceBetween={1} slidesPerView={3} navigation>
                         {
                             cards.map((index)=>{
                                 return(
@@ -54,6 +54,20 @@ const Classes = ({title , extraTitle , mobileTitle , cards})=>{
                             })
                         }
                     </Swiper>
+            </div>
+            <div className='cards-container-425'>
+                <Swiper
+                    spaceBetween={1} slidesPerView={2} navigation>
+                    {
+                        cards.map((index)=>{
+                            return(
+                                <SwiperSlide key={uuidv4()}>
+                                    <ClassCard data={index}/>
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+                </Swiper>
             </div>
         </div>
     )

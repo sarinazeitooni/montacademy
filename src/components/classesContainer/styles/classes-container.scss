@@ -9,6 +9,15 @@
     width: 67%;
     margin: 0 auto;
     direction: rtl;
+    @media screen and (max-width:1024px){
+        width: 95%;
+    }
+    @media screen and (min-width:1440px){
+        width: 50%;
+    }
+    @media screen and (max-width:1440px){
+        width: 95%;
+    }
     @media screen and (max-width:768px){
             width: 90%;
     }

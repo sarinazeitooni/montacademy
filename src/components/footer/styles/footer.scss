@@ -30,6 +30,9 @@
     .left {
       text-align: left;
       @media screen and (max-width:768px){
+        font-size: 11px;
+      }
+      @media screen and (max-width:320px){
         text-align: center;
       }
     }
@@ -106,8 +109,11 @@
         grid-template-columns: auto auto;
         @media screen and (max-width:768px){
           display: flex;
-          margin: 0 auto;
+          width: 45%;
           justify-content: space-between;
+        }
+        @media screen and (max-width:425px){
+          width: 100%;
         }
         .link {
           padding:9px 5px;
@@ -124,7 +130,10 @@
         display: flex;
         justify-content: space-between;
         @media screen and (max-width:768px){
-          margin-right: -40px;
+          margin-right: -60%;
+        }
+        @media screen and (max-width:425px){
+          margin-right: -25%;
         }
         .icon {
           width: 23px;
@@ -151,9 +160,19 @@
           margin-top: 15px;
           width: 401px;
           display: flex;
+          @media screen and (min-width:1440px){
+            width: 401px;
+          }
+          @media screen and (max-width:1440px){
+            width: 275px;
+          }
           @media screen and (max-width:768px){
             margin-bottom: 30px;
             font-size: 13px;
+            width:750px;
+          }
+          @media screen and (max-width:425px){
+            width:125%;
           }
           img{
             display: flex;

@@ -41,6 +41,15 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
+        @media screen and (max-width:1024px){
+            width: 95%;
+        }
+        @media screen and (min-width:1440px){
+            width: 50%;
+        }
+        @media screen and (max-width:1440px){
+            width: 95%;
+        }
         @media screen and (max-width: 768px) {
             display: block;
             width: unset;
@@ -67,6 +76,9 @@
                 font-size: 14px;
                 border: none;
                 font-family: iranYekan !important;
+                @media screen and (max-width:1024px){
+                    width: 220px;
+                }
             }
             svg{
                 position: absolute;
@@ -85,6 +97,11 @@
             width: 240px;
             text-align: center;
             background-color: $submit-btn;
+        }
+        .submit-mobile{
+            @media screen and (max-width:1024px){
+                width: 75%;
+            }
         }
         .submit{
             @media screen and (max-width: 768px) {
