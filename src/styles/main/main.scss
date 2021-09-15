@@ -1,15 +1,18 @@
 @import './src/styles/colors/_colors.scss';
-body{
-    margin: 0;
-    background-color: #f9f9f9;
-    .swiper-button-next , .swiper-button-prev{
-        color: $navigation-btn;
-    }
-    select {
-        appearance: none;
-    }
-    .Toastify{
-        float: left;z-index: 100;
-        background-color: red;
-    }
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  .swiper-button-next, .swiper-button-prev {
+    color: $navigation-btn;
+  }
+  select {
+    appearance: none;
+  }
+  .Toastify {
+    right: 11px;
+    position: fixed;
+    top: 88%;
+    float: left;
+    background-color: red;
+  }
 }

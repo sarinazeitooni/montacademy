@@ -32,7 +32,6 @@ const GetInfoForm = () => {
                         setName('');
                         setNumber('');
                         setOption(0);
-
             }
                 setNameClass('');
         }
@@ -48,8 +47,8 @@ const GetInfoForm = () => {
                     majorid : option
                 }
             }).then((res) => {
-                // toast('با موفقیت انجام شد');
-                console.log(res,'res')
+                toast('با موفقیت انجام شد');
+                setOption(0);
             })
                 .catch((error) => {
                     toast( 'خطا',error);
@@ -69,7 +68,7 @@ const GetInfoForm = () => {
                 </div>
                 <div className='data-fields'>
                     <ArrowDropDownIcon/>
-                    <select onChange={(e)=>{ChangeHandler(setOption,e )}} defaultValue={option}>
+                    <select onChange={(e)=>{ChangeHandler(setOption,e)}} defaultValue={option}>
                         {texts.selectItems.map((item) => {
                             return (<option key={item.text} value={item.value} className='custom-option'>{item.text}</option>)
                         })}

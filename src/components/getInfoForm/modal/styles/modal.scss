@@ -1,12 +1,18 @@
 @import './src/styles/colors/colors';
-
+:root {
+  --toastify-color-light: #38b48b !important;
+  --toastify-text-color-light: white !important;
+  --toastify-font-family: iranYekan !important;
+  --toastify-color-progress-dark : none !important;
+  --toastify-color-progress-light : none !important;
+}
 .modal-container {
   position: absolute;
   background-color: $pop-up-back;
   top: -600%;
   width: 103%;
   height: 1500%;
-
+  z-index: 20;
   .modal-pop-up {
     direction: rtl;
     width: 90%;
@@ -25,6 +31,7 @@
     }
 
     svg {
+      color: $navigation-btn;
       position: absolute;
       left: 8%;
       top: 63%;
@@ -63,6 +70,7 @@
     }
 
     .options {
+      color: $navigation-btn;
       margin: 17px auto 25px auto;
       width: 92.5%;
     }
@@ -85,6 +93,7 @@
       }
 
       .cancel {
+        color: $navigation-btn;
         margin-right: 10px;
         border: 1.5px solid #D8D8D8;
         width: 25%;

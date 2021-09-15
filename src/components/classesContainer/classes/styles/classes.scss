@@ -1,6 +1,6 @@
 @import 'src/styles/colors/colors';
 .class-container {
-  padding: 30px 0 0 0;
+  padding: 50px 0 40px 0;
   margin: 0px 85px;
   position: relative;
   font-family: iranYekan;
@@ -12,6 +12,7 @@
   }
   @media screen and (max-width: 768px) {
     margin: 0;
+    padding: 20px 0;
   }
 .cards-container-mobile{
   display: none;
@@ -32,7 +33,7 @@
       cursor: pointer;
     }
     .swiper-button-next{
-      left: 35px;
+      left: 25px;
     }
     .swiper-button-prev{
       right: 20px;
@@ -92,7 +93,7 @@
   .line {
     opacity: 0.35;
     width: 100%;
-    top: 50px;
+    top: 70px;
     background-color: $line;
     position: absolute;
     @media screen and (max-width: 768px) {

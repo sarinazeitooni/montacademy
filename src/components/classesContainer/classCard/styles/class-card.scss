@@ -89,6 +89,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 10px 0;
+        text-align: left;
         @media screen and (max-width:768px){
           text-align: center;
           padding: 10px 0;
@@ -100,7 +101,7 @@
           &:after {
             position: absolute;
             top: 7px;
-            right: 0;
+            left: 0;
             width: 78%;
             height: 1px;
             background-color: $teacher-border;

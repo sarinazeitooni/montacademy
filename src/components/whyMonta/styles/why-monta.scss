@@ -1,10 +1,10 @@
 @import 'src/styles/colors/colors';
 
 .why-monta-container {
-  width: 66%;
+  width: 67%;
   background-color: white;
   border-radius: 20px;
-  margin: 25px auto;
+  margin: 30px auto;
   font-family: iranYekan;
   direction: rtl;
   padding: 0 0 10px 0;
@@ -42,7 +42,7 @@
         margin: 15px 0;
         cursor: pointer;
         @media screen and (max-width: 768px) {
-         width: 90%;
+         width: 100%;
           margin: 10px auto;
 
         }
@@ -53,7 +53,7 @@
           vertical-align: middle;
           @media screen and (max-width:768px){
             font-size: 14px;
-            padding: 0 10px;
+            padding: 0 20px 0 10px
           }
         }
 

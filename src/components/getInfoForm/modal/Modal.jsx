@@ -3,29 +3,32 @@ import './styles/modal.scss';
 import {texts} from "./texts/texts";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
-import {ToastContainer, toast} from 'react-toastify';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
+
 function Modal({show, close}) {
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
     const [numberClass, setNumberClass] = useState('item');
     const [nameClass, setNameClass] = useState('item');
-    const [option , setOption] = useState(0);
+    const [option, setOption] = useState(0);
+
     function ChangeHandler(field, value) {
         field(value.target.value);
     }
-    function Validation(e){
-        if(name===''){
+    function Validation(e) {
+        if (name === '') {
             setNameClass('item error');
-            if(number==='' || number.length > 11 || number.length < 11){
+            if (number === '' || number.length > 11 || number.length < 11) {
                 setNumberClass('item error');
-            }else{
+            } else {
                 setNumberClass('item');
             }
-        }else{
-            if(number==='' || number.length > 11 || number.length < 11){
+        } else {
+            if (number === '' || number.length > 11 || number.length < 11) {
                 setNumberClass('item error');
-            }else{
+            } else {
                 setNumberClass('item');
                 Submit();
                 setName('');
@@ -35,6 +38,7 @@ function Modal({show, close}) {
             setNameClass('item');
         }
     }
+
     function Submit() {
         axios({
             method: 'post',
@@ -42,18 +46,19 @@ function Modal({show, close}) {
             data: {
                 name: name,
                 mobile: number,
-                majorid : option
+                majorid: option
             }
         }).then((res) => {
-            toast('با موفقیت انجام شد'
-            );
-            console.log(res,'res')
+            toast('با موفقیت انجام شد');
+            console.log(res, 'res');
         })
             .catch((error) => {
                 toast('خطا');
-                console.log(error,'error')
+                console.log(error, 'error')
             })
+        close();
     }
+
     return (
         <React.Fragment>
             {show ? <div className='modal-container'>
@@ -65,11 +70,14 @@ function Modal({show, close}) {
                     <input placeholder={texts.nameInput} value={name} className={nameClass} id='name' onChange={(e) => {
                         ChangeHandler(setName, e)
                     }} type='text'/>
-                    <input placeholder={texts.mobileInput} value={number} className={numberClass} id='number' onChange={(e) => {
-                        ChangeHandler(setNumber, e)
-                    }} type='number'/>
+                    <input placeholder={texts.mobileInput} value={number} className={numberClass} id='number'
+                           onChange={(e) => {
+                               ChangeHandler(setNumber, e)
+                           }} type='number'/>
                     <ArrowDropDownIcon/>
-                    <select className='options' onChange={(e)=>{ChangeHandler(setOption,e )}} id='options' defaultValue={option}>
+                    <select className='options' onChange={(e) => {
+                        ChangeHandler(setOption, e)
+                    }} id='options' defaultValue={option}>
                         {texts.selectOptions.map((item) => {
                             return (<option key={item.text} value={item.value} className='option'>{item.text}</option>)
                         })}
@@ -78,24 +86,13 @@ function Modal({show, close}) {
                     <div className='buttons'>
                         <button className='cancel' onClick={close}>{texts.cancel}</button>
                         <button className='submit' type='submit' onClick={(e) => {
-                           toast("Wow so easy!");
                             Validation(e)
                         }}>{texts.submit}</button>
                     </div>
                 </div>
             </div> : ''}
-            <ToastContainer
-                position="bottom-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
         </React.Fragment>
     )
-};
+}
+
 export default Modal;
