@@ -1,4 +1,15 @@
 @import './src/styles/colors/_colors.scss';
+:root {
+  --swiper-navigation-size: 25px;
+  --toastify-color-light: #38b48b !important;
+  --toastify-text-color-light: white !important;
+  --toastify-font-family: iranYekan !important;
+  --toastify-color-progress-dark : none !important;
+  --toastify-color-progress-light : none !important;
+  @media screen and (max-width:768px){
+      --swiper-navigation-size: 13px;
+    }
+}
 body {
   margin: 0;
   background-color: #f9f9f9;
@@ -8,11 +19,25 @@ body {
   select {
     appearance: none;
   }
-  .Toastify {
-    right: 11px;
-    position: fixed;
-    top: 88%;
-    float: left;
-    background-color: red;
+ul{
+  margin: 0;
+}
+  .classes-container , .footer-bottom-container , .modal-pop-up , .icon-container
+  , .form-title , .form-title-mobile , .form-data-container , .header , .schedule-container , .schedule-mobile-container{
+    margin: 0 auto;
+  }
+  .why-monta-container, .classes-container, .schedule-container, .form-data-container {
+    @media screen and (max-width: 2560px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 2000px) {
+      width: 67%;
+    }
+    @media screen and (max-width: 1440px) {
+      width: 95%;
+    }
+    @media screen and (max-width: 1024px) {
+      width: 95%;
+    }
   }
 }

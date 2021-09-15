@@ -7,21 +7,11 @@
 }
 .schedule-container {
   width: 67%;
-  margin: 0 auto;
   font-family: iranYekan;
   background-color: white;
   direction: rtl;
   border-radius: 20px;
   padding: 30px 0;
-  @media screen and (max-width:1024px){
-    width: 95%;
-  }
-  @media screen and (min-width:1440px){
-    width: 50%;
-  }
-  @media screen and (max-width:1440px){
-    width: 95%;
-  }
   @media screen and (max-width: 768px){
     display: none;
   }
@@ -30,15 +20,10 @@
     font-weight: 600;
     font-size: 20px;
   }
-
   .schedule-swiper {
     .schedule-img {
       height: 605px;
       margin: 0 100px;
-    }
-
-    .swiper-button-next, .swiper-button-prev {
-      color: $navigation-btn;
     }
     .swiper-button-prev{
       right: 30px;

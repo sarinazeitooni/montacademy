@@ -1,9 +1,4 @@
 @import 'src/styles/colors/colors';
-@media screen and (max-width:768px){
-  :root {
-    --swiper-navigation-size: 13px;
-  }
-}
 .submit-buy{
   background-color: $submit-btn;
   color: white;
@@ -20,7 +15,6 @@
 }
 .schedule-mobile-container {
   background-color: white;
-  margin: 0 auto;
   width: 85%;
   border-radius: 20px;
   font-family: iranYekan;
@@ -34,13 +28,11 @@ a{
     font-weight: bold;
     font-size: 20px;
   }
-
   .subtitle {
     white-space: nowrap;
     font-size: 9.5px;
     margin-bottom: 18px;
   }
-
   .get-btn {
     text-align: center;
     padding: 14px;

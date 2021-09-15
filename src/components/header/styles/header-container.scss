@@ -9,9 +9,6 @@
   height: 46px;
   .header{
     width: 93%;
-    margin: 0 auto;
-    ul{
-      margin: 0;
       li{
         font-family: iranYekan;
         font-size: 13px;
@@ -36,7 +33,6 @@
       }
     }
   }
-}
 @media screen and (max-width: 768px){
   .monta-icon{
     margin-right: 18%;

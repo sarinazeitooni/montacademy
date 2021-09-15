@@ -1,11 +1,4 @@
 @import './src/styles/colors/colors';
-:root {
-  --toastify-color-light: #38b48b !important;
-  --toastify-text-color-light: white !important;
-  --toastify-font-family: iranYekan !important;
-  --toastify-color-progress-dark : none !important;
-  --toastify-color-progress-light : none !important;
-}
 .modal-container {
   position: absolute;
   background-color: $pop-up-back;
@@ -16,46 +9,39 @@
   .modal-pop-up {
     direction: rtl;
     width: 90%;
-    margin: 0 auto;
     background-color: white;
     top: 20%;
     left: 5%;
     border-radius: 24px;
     position: fixed;
-
     .title {
       font-size: 10px;
       margin: 40px 17px 25px 17px;
       opacity: 0.8;
       color: $second-price;
     }
-
     svg {
       color: $navigation-btn;
       position: absolute;
       left: 8%;
       top: 63%;
     }
-
     .icon-container {
       color: red;
       width: 50px;
       height: 50px;
       background-color: $submit-btn;
       border-radius: 50%;
-      margin: 0 auto;
       border: 5px solid white;
       position: absolute;
       top: -25px;
       left: 40.5%;
-
       svg {
         margin: 12px;
         color: white;
         position: unset;
       }
     }
-
     .item, .options {
       width: 85%;
       font-family: iranYekan !important;
@@ -63,23 +49,20 @@
       outline: none;
       height: 44px;
       background: #FFFFFF;
-      border: 1px solid #D8D8D8;
+      border: 1px solid $form-input-border;
       border-radius: 16px;
       padding-right: 20px;
       display: block;
     }
-
     .options {
       color: $navigation-btn;
       margin: 17px auto 25px auto;
       width: 92.5%;
     }
-
     .error {
       height: 42px;
       border: 2px solid red !important;
     }
-
     .buttons {
       text-align: center;
       margin-bottom: 25px;
@@ -91,15 +74,13 @@
         border-radius: 16px;
         height: 44px;
       }
-
       .cancel {
         color: $navigation-btn;
         margin-right: 10px;
-        border: 1.5px solid #D8D8D8;
+        border: 1.5px solid $form-input-border;
         width: 25%;
         background-color: white;
       }
-
       .submit {
         background-color: $submit-btn;
         color: white;

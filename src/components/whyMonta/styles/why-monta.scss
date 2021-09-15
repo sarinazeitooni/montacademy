@@ -1,5 +1,4 @@
 @import 'src/styles/colors/colors';
-
 .why-monta-container {
   width: 67%;
   background-color: white;
@@ -8,19 +7,9 @@
   font-family: iranYekan;
   direction: rtl;
   padding: 0 0 10px 0;
-  @media screen and (max-width:1024px){
-  width: 95%;
-}
-  @media screen and (min-width:1440px){
-    width: 50%;
-  }
-  @media screen and (max-width:1440px){
-    width: 95%;
-  }
   @media screen and (max-width: 768px) {
     width: 90%;
   }
-
   .why-monta-title {
     font-size: 20px;
     font-weight: 800;
@@ -30,23 +19,21 @@
       padding: 20px 25px 5px 0;
     }
   }
-
   .why-monta-items {
     display: flex;
     justify-content: space-around;
-    margin: 0px 6%;
+    margin: 0 6%;
     @media screen and (max-width: 1024px) {
       margin: 0px 10px;
     }
     @media screen and (max-width: 768px) {
       flex-direction: column;
-      margin: 0px 6%;
+      margin: 0 6%;
     }
     .item-container {
       .clicked {
         background-color: $extra-title;
       }
-
       .options {
         border-radius: 12px;
         font-size: 14px;
@@ -87,7 +74,6 @@
         }
       }
     }
-
     .item-img {
       img {
         @media screen and (max-width:768px){
