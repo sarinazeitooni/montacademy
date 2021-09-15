@@ -315,5 +315,108 @@ export const montaCademyOptions =
                 url: 'https://www.monta.ir/monta-cademy/assets/images/8banner-montacademy-08.png'
             },
         ]
+    };
+export const MontAcademyScheduleTexts = {
+    title: 'برنامه منتآکادمی',
+    subtitle : 'جهت مشاهده و دریافت برنامه ی کلاس های منتآکادمی کلیک کنید:',
+    btn : 'دریافت برنامه',
+    submit : 'ثبت درخواست مشاوره'
+};
+export const menuData = {
+    img : 'https://www.monta.ir/landings/images/logo.svg',
+    items : [
+        'درباره ی ما',
+        'بانک سوال',
+        'آمادگی کنکور',
+        'منتآکادمی',
+        'منتآزمون',
+        'تماس با ما'
+    ],
+    loginAndSignUp : 'ورود/ثبت نام'
+};
+export const GetInfotexts = {
+    title : 'جهت دریافت اطلاعات بیشتر و ثبت نام فرم زیر را تکمیل کنید:',
+    mobileTitle : 'جهت دریافت اطلاعات بیشتر و ثبت نام کلیک کنید',
+    nameInput : 'نام و نام خانوادگی',
+    mobileInput : 'شماره موبایل',
+    selectTitle : 'رشته تحصیلی',
+    selectOptions : [
+        {
+            text : 'ریاضی',
+            value : '60'
+        },
+        {
+            text : 'تجربی',
+            value : '61'
+        },
+        {
+            text : 'انسانی',
+            value : '62'
+        }
+    ],
+    submit : 'ثبت درخواست مشاوره',
+    cancel : 'انصراف'
+};
+export const FooterData = {
+    columns : [
+        {
+            title: 'راه های ارتباطی',
+            communication : {
+                locationIcon : 'https://www.monta.ir/landings/Footer//Address%20icon%20-%2016px.svg',
+                telIcon : 'https://www.monta.ir/landings/Footer//Call%20icon%20-%2016px.svg',
+                mailIcon : 'https://www.monta.ir/landings/Footer//Email%20icon%20-%2016px.svg',
+                number : '     ۹۱۰۱۲۶۵۶ (۰۲۱)      ',
+                email : '     info@monta.ir      ',
+                address : '           شهرک غرب، خیابان ایوانک، خیابان زرافشان، نبش خیابان درخشان، مرکز خرید درخشان، طبقه سوم    '
+            }
+        },
+        {
+            title: 'لینک های مفید',
+            links : [
+                'منتآکادمی',
+                'موقعیت‌های شغلی',
+                'منتآزمون',
+                'جذب نمایندگی',
+                'پلتفرم کلاس آنلاین'
+            ]
+
+        },
+        {
+            title: 'ما را دنبال کنید!',
+            icons : [
+                'https://www.monta.ir/landings/Footer//Instagram.svg',
+                'https://www.monta.ir/landings/Footer//telegram.svg',
+                'https://www.monta.ir/landings/Footer//aparat.svg',
+                'https://www.monta.ir/landings/Footer//Linkedin.svg'
+            ]
+
+        }
+    ],
+    Enamad : 'https://www.monta.ir/landings/Footer//Enamad.PNG',
+    heart : 'https://www.monta.ir/landings/Footer//Heart%20icon%20-%2016px.svg',
+    footerleft : 'تمامی حقوق محفوظ و متعلق به شرکت ایده‌پردازان دانش عصر نو است.',
+    footerRightFirst : ' تولید شده با ',
+    footerRightSecond : ' در مُــنتا '
+};
+export const classCardIcons = {
+    sessions : 'https://www.monta.ir/monta-cademy/assets/images/Play.svg',
+    profile : 'https://www.monta.ir/monta-cademy/assets/images/Profile.svg'
+};
+ export const images = [
+    {
+        desktop : 'https://www.monta.ir/monta-cademy/assets/images/banner-desktop-1.png',
+        mobile : 'https://www.monta.ir/monta-cademy/assets/images/banner-mobile-1.png'
+    },
+    {
+        desktop : 'https://www.monta.ir/monta-cademy/assets/images/banner-desktop-2.png',
+        mobile : 'https://www.monta.ir/monta-cademy/assets/images/banner-mobile-2.png'
+    },
+    {
+        desktop : 'https://www.monta.ir/monta-cademy/assets/images/banner-desktop-3.png',
+        mobile : 'https://www.monta.ir/monta-cademy/assets/images/banner-mobile-3.png'
+    },
+    {
+        desktop : 'https://www.monta.ir/monta-cademy/assets/images/banner-desktop-4.png',
+        mobile : 'https://www.monta.ir/monta-cademy/assets/images/banner-mobile-4.png'
     }
-;
+];

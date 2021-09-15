@@ -1,6 +1,6 @@
 import React from "react";
 import './styles/footer.scss';
-import FooterData from "./data/data";
+import {FooterData} from "../../data/data";
 
 const FooterContainer = () => {
     return (

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import './styles/get-info-form.scss';
-import texts from "./data/texts";
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import Modal from "./modal/Modal";
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
+import {GetInfotexts} from "../../data/data";
 const GetInfoForm = () => {
     const [show , setShow] = useState(false);
     const [name,setName] = useState('');
@@ -57,26 +57,26 @@ const GetInfoForm = () => {
     }
     return (
         <div className='get-info-form-container'>
-            <h3 className='form-title'>{texts.title}</h3>
-            <h3 className='form-title-mobile'>{texts.mobileTitle}</h3>
+            <h3 className='form-title'>{GetInfotexts.title}</h3>
+            <h3 className='form-title-mobile'>{GetInfotexts.mobileTitle}</h3>
             <div className='form-data-container'>
                 <div className='data-fields'>
-                    <input className={nameClass} value={name} type='text' onChange={(e)=>{ChangeHandler(setName,e )}}  placeholder={texts.name}/>
+                    <input className={nameClass} value={name} type='text' onChange={(e)=>{ChangeHandler(setName,e )}}  placeholder={GetInfotexts.nameInput}/>
                 </div>
                 <div className='data-fields'>
-                    <input className={numberClass} value={number} type='number' onChange={(e)=>{ChangeHandler(setNumber,e )}}  placeholder={texts.number}/>
+                    <input className={numberClass} value={number} type='number' onChange={(e)=>{ChangeHandler(setNumber,e )}}  placeholder={GetInfotexts.mobileInput}/>
                 </div>
                 <div className='data-fields'>
                     <ArrowDropDownIcon/>
                     <select onChange={(e)=>{ChangeHandler(setOption,e)}} defaultValue={option}>
-                        {texts.selectItems.map((item) => {
+                        {GetInfotexts.selectOptions.map((item) => {
                             return (<option key={item.text} value={item.value} className='custom-option'>{item.text}</option>)
                         })}
-                        <option className='custom-option' value={0} disabled hidden>{texts.selectTitle}</option>
+                        <option className='custom-option' value={0} disabled hidden>{GetInfotexts.selectTitle}</option>
                     </select>
                 </div>
-                <div onClick={(e)=>{Validation(e)}} className='data-fields submit'>{texts.submit}</div>
-                <div onClick={()=>{setShow(true)}} className='data-fields submit-mobile'>{texts.submit}</div>
+                <div onClick={(e)=>{Validation(e)}} className='data-fields submit'>{GetInfotexts.submit}</div>
+                <div onClick={()=>{setShow(true)}} className='data-fields submit-mobile'>{GetInfotexts.submit}</div>
             </div>
             <Modal close={()=>{setShow(false)}} show={show}/>
             <ToastContainer

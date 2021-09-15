@@ -1,6 +1,6 @@
 import React from "react";
 import './styles/class-card.scss';
-import {icons} from "./data/data";
+import {classCardIcons} from "../../../data/data";
 
 const ClassCard = ({data}) => {
     return (
@@ -12,8 +12,8 @@ const ClassCard = ({data}) => {
                 </div>
                 <div className='container'>
                     <div className='name-session-container'>
-                        <div className='name'><img alt='profile' src={icons.profile}/><span> {data.teacherName} </span></div>
-                        <div className='session'><img alt='session' src={icons.sessions}/><span> {data.sessionNumber} جلسه </span></div>
+                        <div className='name'><img alt='profile' src={classCardIcons.profile}/><span> {data.teacherName} </span></div>
+                        <div className='session'><img alt='session' src={classCardIcons.sessions}/><span> {data.sessionNumber} جلسه </span></div>
 
                     </div>
                     <div className='price-container'>

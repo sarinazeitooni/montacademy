@@ -1,12 +1,11 @@
 import React, {useState} from "react";
 import './styles/modal.scss';
-import {texts} from "./texts/texts";
+import {GetInfotexts} from "../../../data/data";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
-
 function Modal({show, close}) {
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
@@ -66,11 +65,11 @@ function Modal({show, close}) {
                     <div className='icon-container'>
                         <PhoneInTalkIcon/>
                     </div>
-                    <div className='title'>{texts.title}</div>
-                    <input placeholder={texts.nameInput} value={name} className={nameClass} id='name' onChange={(e) => {
+                    <div className='title'>{GetInfotexts.title}</div>
+                    <input placeholder={GetInfotexts.nameInput} value={name} className={nameClass} id='name' onChange={(e) => {
                         ChangeHandler(setName, e)
                     }} type='text'/>
-                    <input placeholder={texts.mobileInput} value={number} className={numberClass} id='number'
+                    <input placeholder={GetInfotexts.mobileInput} value={number} className={numberClass} id='number'
                            onChange={(e) => {
                                ChangeHandler(setNumber, e)
                            }} type='number'/>
@@ -78,16 +77,16 @@ function Modal({show, close}) {
                     <select className='options' onChange={(e) => {
                         ChangeHandler(setOption, e)
                     }} id='options' defaultValue={option}>
-                        {texts.selectOptions.map((item) => {
+                        {GetInfotexts.selectOptions.map((item) => {
                             return (<option key={item.text} value={item.value} className='option'>{item.text}</option>)
                         })}
-                        <option className='option' value={0} disabled hidden>{texts.selectTitle}</option>
+                        <option className='option' value={0} disabled hidden>{GetInfotexts.selectTitle}</option>
                     </select>
                     <div className='buttons'>
-                        <button className='cancel' onClick={close}>{texts.cancel}</button>
+                        <button className='cancel' onClick={close}>{GetInfotexts.cancel}</button>
                         <button className='submit' type='submit' onClick={(e) => {
                             Validation(e)
-                        }}>{texts.submit}</button>
+                        }}>{GetInfotexts.submit}</button>
                     </div>
                 </div>
             </div> : ''}

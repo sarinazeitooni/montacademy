@@ -2,7 +2,7 @@ import HeaderContainer from "./components/header/HeaderContainer";
 import './styles/fonts/fonts.css';
 import './styles/main/main.scss';
 import BannerSwiper from "./components/banerSwiper/BannerSwiper";
-import images from "./components/banerSwiper/data/images/images";
+import {images} from "./data/data";
 import GetInfoForm from "./components/getInfoForm/GetInfoForm";
 import ClassesContainer from "./components/classesContainer/ClassesContainer";
 import FooterContainer from "./components/footer/FooterContainer";

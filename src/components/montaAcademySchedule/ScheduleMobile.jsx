@@ -1,22 +1,22 @@
 import React, {useState} from "react";
-import {texts} from "./texts/texts";
+import {MontAcademyScheduleTexts} from "../../data/data";
 import './styles/schedule-mobile.scss';
 import Modal from "../getInfoForm/modal/Modal";
 const ScheduleMobile = ()=>{
     const [show , setShow] = useState(false);
     return(
         <React.Fragment>
-            <button className='submit-buy' onClick={()=>{setShow(true)}}>{texts.submit}</button>
+            <button className='submit-buy' onClick={()=>{setShow(true)}}>{MontAcademyScheduleTexts.submit}</button>
             <div className='schedule-mobile-container'>
                 <div className='title'>
-                    {texts.title}
+                    {MontAcademyScheduleTexts.title}
                 </div>
                 <div className='subtitle'>
-                    {texts.subtitle}
+                    {MontAcademyScheduleTexts.subtitle}
                 </div>
                 <a download="schedule.pdf"  href='../../data/schedule.pdf'>
                     <div className='get-btn'>
-                        {texts.btn}
+                        {MontAcademyScheduleTexts.btn}
                     </div>
                 </a>
             </div>
