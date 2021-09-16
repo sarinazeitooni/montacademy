@@ -11,7 +11,7 @@ const BannerSwiper = ({images}) => {
     return (
         <div className='banner-swiper-container'>
             <Swiper
-                spaceBetween={1} slidesPerView={1} loop={true} navigation>
+                spaceBetween={1} slidesPerView={1} navigation>
                 {
                     images.map((item)=>{
                         return(

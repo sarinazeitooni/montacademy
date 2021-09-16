@@ -12,55 +12,45 @@ function Modal({show, close}) {
     const [numberClass, setNumberClass] = useState('item');
     const [nameClass, setNameClass] = useState('item');
     const [option, setOption] = useState(0);
-
+    const [optionClass , setOptionClass] = useState('options');
     function ChangeHandler(field, value) {
         field(value.target.value);
     }
-    function Validation(e) {
-        if (name === '') {
-            setNameClass('item error');
-            if (number === '' || number.length > 11 || number.length < 11) {
-                setNumberClass('item error');
-            } else {
-                setNumberClass('item');
-            }
-        } else {
-            if (number === '' || number.length > 11 || number.length < 11) {
-                setNumberClass('item error');
-            } else {
-                setNumberClass('item');
-                Submit();
-                setName('');
-                setNumber('');
-                setOption(0);
-            }
+    function Validation() {
+        if(name!==''){
             setNameClass('item');
-        }
+            if(number!=='' && number.length === 11){
+                setNumberClass('item');
+                if(option!==0){
+                    setOptionClass('options')
+                    Submit();
+                }else setOptionClass('error options')
+            }else setNumberClass('error item');
+        }else setNameClass('error item');
     }
-
     function Submit() {
+        setName('');
+        setNumber('');
+        setOption(0);
         axios({
             method: 'post',
             url: 'https://reqres.in/api/login/data',
             data: {
                 name: name,
                 mobile: number,
-                majorid: option
+                majorid : option
             }
         }).then((res) => {
             toast('با موفقیت انجام شد');
-            console.log(res, 'res');
         })
             .catch((error) => {
-                toast('خطا');
-                console.log(error, 'error')
+                toast( 'خطا',error);
             })
         close();
     }
-
     return (
         <React.Fragment>
-            {show ? <div className='modal-container'>
+            {show && <div className='modal-container'>
                 <div className='modal-pop-up'>
                     <div className='icon-container'>
                         <PhoneInTalkIcon/>
@@ -74,24 +64,23 @@ function Modal({show, close}) {
                                ChangeHandler(setNumber, e)
                            }} type='number'/>
                     <ArrowDropDownIcon/>
-                    <select className='options' onChange={(e) => {
+                    <select className={optionClass} value={option} onChange={(e) => {
                         ChangeHandler(setOption, e)
-                    }} id='options' defaultValue={option}>
+                    }} id='options'>
                         {GetInfotexts.selectOptions.map((item) => {
                             return (<option key={item.text} value={item.value} className='option'>{item.text}</option>)
                         })}
-                        <option className='option' value={0} disabled hidden>{GetInfotexts.selectTitle}</option>
+                        <option className='option' value={0} hidden>{GetInfotexts.selectTitle}</option>
                     </select>
                     <div className='buttons'>
                         <button className='cancel' onClick={close}>{GetInfotexts.cancel}</button>
                         <button className='submit' type='submit' onClick={(e) => {
-                            Validation(e)
+                            Validation()
                         }}>{GetInfotexts.submit}</button>
                     </div>
                 </div>
-            </div> : ''}
+            </div>}
         </React.Fragment>
     )
 }
-
 export default Modal;

@@ -1,7 +1,4 @@
 @import "src/styles/colors/colors";
-:root {
-    --swiper-navigation-size : 25px;
-}
 .banner-swiper-container{
     img {
         width: 100%;
@@ -16,13 +13,5 @@
         @media screen and (max-width: 768px){
             display: none;
         }
-    }
-    .swiper-button-prev{
-        cursor: pointer;
-        color:$navigation-btn;
-    }
-    .swiper-button-next {
-        color: $navigation-btn;
-        cursor: pointer;
     }
 }

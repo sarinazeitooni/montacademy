@@ -22,14 +22,11 @@
   }
   .schedule-swiper {
     .schedule-img {
-      height: 605px;
+      height: 600px;
       margin: 0 100px;
-    }
-    .swiper-button-prev{
-      right: 30px;
-    }
-    .swiper-button-next{
-      left: 30px;
+      @media screen and (max-width: 1024px){
+        height: 430px;
+      }
     }
   }
 }

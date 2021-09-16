@@ -4,26 +4,30 @@
   --toastify-color-light: #38b48b !important;
   --toastify-text-color-light: white !important;
   --toastify-font-family: iranYekan !important;
-  --toastify-color-progress-dark : none !important;
-  --toastify-color-progress-light : none !important;
-  @media screen and (max-width:768px){
-      --swiper-navigation-size: 13px;
-    }
+  --toastify-color-progress-dark: none !important;
+  --toastify-color-progress-light: none !important;
+  @media screen and (max-width: 768px) {
+    --swiper-navigation-size: 17px!important;
+  }
 }
 body {
   margin: 0;
   background-color: #f9f9f9;
   .swiper-button-next, .swiper-button-prev {
     color: $navigation-btn;
+    cursor: pointer;
   }
   select {
     appearance: none;
   }
-ul{
-  margin: 0;
-}
-  .classes-container , .footer-bottom-container , .modal-pop-up , .icon-container
-  , .form-title , .form-title-mobile , .form-data-container , .header , .schedule-container , .schedule-mobile-container{
+  a{
+    text-decoration: none;
+  }
+  ul {
+    margin: 0;
+  }
+  .classes-container, .footer-bottom-container, .modal-pop-up, .icon-container, .form-title, .form-title-mobile,
+  .form-data-container, .header, .schedule-container, .schedule-mobile-container {
     margin: 0 auto;
   }
   .why-monta-container, .classes-container, .schedule-container, .form-data-container {

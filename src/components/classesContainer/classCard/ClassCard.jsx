@@ -1,7 +1,6 @@
 import React from "react";
 import './styles/class-card.scss';
 import {classCardIcons} from "../../../data/data";
-
 const ClassCard = ({data}) => {
     return (
         <div className='card'>
@@ -14,7 +13,6 @@ const ClassCard = ({data}) => {
                     <div className='name-session-container'>
                         <div className='name'><img alt='profile' src={classCardIcons.profile}/><span> {data.teacherName} </span></div>
                         <div className='session'><img alt='session' src={classCardIcons.sessions}/><span> {data.sessionNumber} جلسه </span></div>
-
                     </div>
                     <div className='price-container'>
                         <div className='price'>{data.priceWithOutOff}تومان</div>

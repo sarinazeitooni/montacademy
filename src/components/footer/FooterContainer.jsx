@@ -1,7 +1,7 @@
 import React from "react";
 import './styles/footer.scss';
 import {FooterData} from "../../data/data";
-
+import {FooterBottom} from "./FooterBottom";
 const FooterContainer = () => {
     return (
         <div className='footer-container'>
@@ -56,16 +56,7 @@ const FooterContainer = () => {
                 </div>
             </div>
             <hr/>
-            <div className='footer-bottom-container'>
-                <div className='right'>
-                    {FooterData.footerRightFirst}
-                    <img alt='heart' src={FooterData.heart}/>
-                    {FooterData.footerRightSecond}
-                </div>
-                <div className='left'>
-                    {FooterData.footerleft}
-                </div>
-            </div>
+            <FooterBottom/>
         </div>
     )
 }

@@ -12,32 +12,26 @@ const GetInfoForm = () => {
     const [option , setOption] = useState(0);
     const [numberClass , setNumberClass] = useState('');
     const [nameClass , setNameClass] = useState('');
+    const [optionClass , setOptionClass] = useState('');
     function ChangeHandler(field , value){
         field(value.target.value);
     }
-    function Validation(e){
-        if(name===''){
-            setNameClass('error');
-            if(number==='' || number.length > 11 || number.length < 11){
-                setNumberClass('error');
-            }else{
+    function Validation(){
+        if(name!==''){
+            setNameClass('');
+            if(number!=='' && number.length === 11){
                 setNumberClass('');
-            }
-        }else{
-            if(number==='' || number.length > 11 || number.length < 11){
-                setNumberClass('error');
-            }else{
-                setNumberClass('');
-                        Submit();
-                        setName('');
-                        setNumber('');
-                        setOption(0);
-            }
-                setNameClass('');
-        }
+                if(option!==0){
+                    setOptionClass('')
+                    Submit();
+                }else setOptionClass('error')
+            }else setNumberClass('error');
+        }else setNameClass('error');
     }
     function Submit(){
-        if(option!== 0 ){
+        setName('');
+        setNumber('');
+        setOption(0);
             axios({
                 method: 'post',
                 url: 'https://reqres.in/api/login/data',
@@ -48,12 +42,10 @@ const GetInfoForm = () => {
                 }
             }).then((res) => {
                 toast('با موفقیت انجام شد');
-                setOption(0);
             })
                 .catch((error) => {
                     toast( 'خطا',error);
                 })
-        }
     }
     return (
         <div className='get-info-form-container'>
@@ -68,14 +60,14 @@ const GetInfoForm = () => {
                 </div>
                 <div className='data-fields'>
                     <ArrowDropDownIcon/>
-                    <select onChange={(e)=>{ChangeHandler(setOption,e)}} defaultValue={option}>
+                    <select value={option} className={optionClass} onChange={(e)=>{ChangeHandler(setOption,e)}}>
                         {GetInfotexts.selectOptions.map((item) => {
                             return (<option key={item.text} value={item.value} className='custom-option'>{item.text}</option>)
                         })}
-                        <option className='custom-option' value={0} disabled hidden>{GetInfotexts.selectTitle}</option>
+                        <option className='custom-option' value={0} hidden>{GetInfotexts.selectTitle}</option>
                     </select>
                 </div>
-                <div onClick={(e)=>{Validation(e)}} className='data-fields submit'>{GetInfotexts.submit}</div>
+                <div onClick={(e)=>{Validation()}} className='data-fields submit'>{GetInfotexts.submit}</div>
                 <div onClick={()=>{setShow(true)}} className='data-fields submit-mobile'>{GetInfotexts.submit}</div>
             </div>
             <Modal close={()=>{setShow(false)}} show={show}/>
@@ -85,7 +77,7 @@ const GetInfoForm = () => {
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
-                rtl={false}
+                rtl={true}
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover

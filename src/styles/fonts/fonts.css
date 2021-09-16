@@ -1,5 +1,5 @@
 @font-face {
     font-family:"iranYekan";
-    src: url("../../fonts/iranyekan/ttf/iranyekanwebregularfanum.ttf") format('truetype'),
-    url("../../fonts/iranyekan/woff/iranyekanwebregularfanum.woff") format('woff');
+    src: url("fontsFolder/iranyekan/ttf/iranyekanwebregularfanum.ttf") format('truetype'),
+    url("fontsFolder/iranyekan/woff/iranyekanwebregularfanum.woff") format('woff');
 }
