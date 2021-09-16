@@ -19,7 +19,7 @@ function Modal({show, close}) {
     function Validation() {
         if(name!==''){
             setNameClass('item');
-            if(number!=='' && number.length === 11){
+            if(number!=='' && number.length === 11 && number.charAt(0)=== '0'){
                 setNumberClass('item');
                 if(option!==0){
                     setOptionClass('options')

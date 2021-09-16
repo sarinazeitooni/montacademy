@@ -19,7 +19,7 @@ const GetInfoForm = () => {
     function Validation(){
         if(name!==''){
             setNameClass('');
-            if(number!=='' && number.length === 11){
+            if(number!=='' && number.length === 11 && number.charAt(0)=== '0'){
                 setNumberClass('');
                 if(option!==0){
                     setOptionClass('')
