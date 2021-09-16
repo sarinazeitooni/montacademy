@@ -44,7 +44,7 @@ const GetInfoForm = () => {
                 toast('با موفقیت انجام شد');
             })
                 .catch((error) => {
-                    toast( 'خطا',error);
+                    toast.error( 'خطا',error);
                 })
     }
     return (
@@ -74,15 +74,11 @@ const GetInfoForm = () => {
             <ToastContainer
                 position="bottom-right"
                 autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
+                hideProgressBar={true}
                 closeOnClick
                 rtl={true}
-                pauseOnFocusLoss
-                draggable
                 pauseOnHover
             />
         </div>
-    )
-};
+    )}
 export default GetInfoForm;
