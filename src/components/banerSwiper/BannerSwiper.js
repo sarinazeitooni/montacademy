@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import SwiperCore, {
