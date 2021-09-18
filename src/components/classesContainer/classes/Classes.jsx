@@ -11,7 +11,10 @@ import { useMediaQuery } from 'react-responsive';
 SwiperCore.use([Navigation]);
 const Classes = ({title , extraTitle , mobileTitle , cards})=>{
     const is768 = useMediaQuery({
-        query: '(min-width: 430px) and (max-width:1024px)'
+        query: '(min-width: 434px) and (max-width:1024px)'
+    })
+    const isMiddle = useMediaQuery({
+        query: '(min-width: 768px) and (max-width: 1024px)'
     })
     return(
         <div className='class-container'>
@@ -24,7 +27,7 @@ const Classes = ({title , extraTitle , mobileTitle , cards})=>{
             <div className='cards-container'>
                 {cards.length > 4 ?
                     <Swiper
-                        spaceBetween={1} slidesPerView={4} navigation>
+                        spaceBetween={1} slidesPerView={isMiddle ? 3 : 4} navigation>
                         {
                             cards.map((index)=>{
                                 return(
@@ -35,7 +38,18 @@ const Classes = ({title , extraTitle , mobileTitle , cards})=>{
                             })
                         }
                     </Swiper>
-                    :
+                    : isMiddle ? <Swiper
+                            spaceBetween={1} slidesPerView={3} navigation>
+                            {
+                                cards.map((index)=>{
+                                    return(
+                                        <SwiperSlide key={uuidv4()}>
+                                            <ClassCard data={index}/>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
+                        </Swiper> :
                     cards.map((index)=>{
                             return(
                                 <React.Fragment key={uuidv4()}>

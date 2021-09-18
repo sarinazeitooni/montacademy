@@ -29,8 +29,14 @@ body {
     margin: 0 auto;
   }
   .why-monta-container, .classes-container, .schedule-container, .form-data-container {
-    @media screen and (max-width: 2560px) {
+    @media screen and (min-width: 2450px){
       width: 50%;
+    }
+    @media screen and (min-width: 2000px) and (max-width: 2450px) {
+      width: 60%;
+    }
+    @media screen and (min-width: 1440px) and (max-width: 2000px) {
+      width: 85%;
     }
     @media screen and (max-width: 2000px) {
       width: 67%;
@@ -38,8 +44,11 @@ body {
     @media screen and (max-width: 1440px) {
       width: 95%;
     }
-    @media screen and (max-width: 1024px) {
-      width: 95%;
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+      width: 97%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1200px){
+      width: 100%;
     }
   }
 }
