@@ -2,16 +2,19 @@ import * as React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import SwiperCore, {
-    Navigation
+    Navigation , Autoplay
 } from 'swiper';
 import './styles/baner-swiper.scss';
 import { v4 as uuidv4 } from 'uuid';
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation,Autoplay]);
 const BannerSwiper = ({images}) => {
     return (
         <div className='banner-swiper-container'>
             <Swiper
-                spaceBetween={1} slidesPerView={1} navigation>
+                spaceBetween={1} slidesPerView={1} navigation={true} autoplay={{
+                "delay": 2500,
+                "disableOnInteraction": false
+            }}>
                 {
                     images.map((item)=>{
                         return(

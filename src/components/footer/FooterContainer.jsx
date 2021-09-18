@@ -34,12 +34,12 @@ const FooterContainer = () => {
                                 {item.communication && <div className='communication-container'>
                                     <div className='tel-and-email'>
                                         <span>
-                                            <img alt='communication' src={item.communication.telIcon}/>
-                                            {item.communication.number}
-                                        </span>
-                                        <span>
                                            <img alt='communication' src={item.communication.mailIcon}/>
                                             {item.communication.email}
+                                        </span>
+                                        <span>
+                                            <img alt='communication' src={item.communication.telIcon}/>
+                                            {item.communication.number}
                                         </span>
                                     </div>
                                     <div className='address'>
