@@ -33,9 +33,12 @@
       }
     }
   }
-@media screen and (max-width: 768px){
-  .monta-icon{
+.monta-icon{
+  @media screen and (max-width: 768px){
     margin-right: 18%;
     display: block!important;
+  }
+  @media screen and (max-width:320px){
+    margin: 0;
   }
 }

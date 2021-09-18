@@ -14,7 +14,7 @@ const ScheduleMobile = ()=>{
                 <div className='subtitle'>
                     {MontAcademyScheduleTexts.subtitle}
                 </div>
-                <a download="schedule.pdf"  href='../../data/schedule.pdf'>
+                <a download href='../../data/schedule.pdf'>
                     <div className='get-btn'>
                         {MontAcademyScheduleTexts.btn}
                     </div>

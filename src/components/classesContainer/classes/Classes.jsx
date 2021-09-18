@@ -8,7 +8,6 @@ import SwiperCore, {
 } from 'swiper';
 import {v4 as uuidv4} from "uuid";
 import {useMediaQuery} from 'react-responsive';
-
 SwiperCore.use([Navigation]);
 const Classes = ({title, extraTitle, mobileTitle, cards}) => {
     const isSmall = useMediaQuery({
@@ -19,7 +18,7 @@ const Classes = ({title, extraTitle, mobileTitle, cards}) => {
     })
     const isBig = useMediaQuery({
         query: '(min-width: 1024px)'
-    })
+    });
     function size(){
         if(isSmall){
             return (2);
