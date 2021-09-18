@@ -11,7 +11,7 @@ import { useMediaQuery } from 'react-responsive';
 SwiperCore.use([Navigation]);
 const Classes = ({title , extraTitle , mobileTitle , cards})=>{
     const is768 = useMediaQuery({
-        query: '(min-width: 430px) and (max-width:1000px)'
+        query: '(min-width: 430px) and (max-width:1024px)'
     })
     return(
         <div className='class-container'>

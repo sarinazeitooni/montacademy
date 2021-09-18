@@ -1,6 +1,6 @@
 @import './src/styles/colors/_colors.scss';
 :root {
-  --swiper-navigation-size: 25px;
+  --swiper-navigation-size: 25px !important;
   --toastify-color-light: #38b48b !important;
   --toastify-text-color-light: white !important;
   --toastify-font-family: iranYekan !important;
