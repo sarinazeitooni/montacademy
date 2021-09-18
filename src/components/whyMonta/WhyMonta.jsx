@@ -1,14 +1,11 @@
 import React from "react";
 import {useState} from "react";
 import './styles/why-monta.scss';
-
 const WhyMonta = ({title, data}) => {
     const [index, setIndex] = useState(0);
-
     function urlHandler(i) {
         setIndex(i - 1);
     }
-
     return (
         <div className='why-monta-container'>
             <div className='why-monta-title'>{title}</div>
