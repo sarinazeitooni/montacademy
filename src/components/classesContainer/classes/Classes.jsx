@@ -7,8 +7,12 @@ import SwiperCore, {
     Navigation
 } from 'swiper';
 import {v4 as uuidv4} from "uuid";
+import { useMediaQuery } from 'react-responsive';
 SwiperCore.use([Navigation]);
 const Classes = ({title , extraTitle , mobileTitle , cards})=>{
+    const is768 = useMediaQuery({
+        query: '(min-width: 430px) and (max-width:1000px)'
+    })
     return(
         <div className='class-container'>
             <div className='text-container'>
@@ -41,9 +45,9 @@ const Classes = ({title , extraTitle , mobileTitle , cards})=>{
                         })
                 }
             </div>
-            <div className='cards-container-768'>
+            <div className={is768 ? 'cards-container-768' : 'cards-container-425'}>
                     <Swiper
-                        spaceBetween={1} slidesPerView={3} navigation>
+                        spaceBetween={1} slidesPerView={is768 ? 3 : 2} navigation>
                         {
                             cards.map((index)=>{
                                 return(
@@ -54,20 +58,6 @@ const Classes = ({title , extraTitle , mobileTitle , cards})=>{
                             })
                         }
                     </Swiper>
-            </div>
-            <div className='cards-container-425'>
-                <Swiper
-                    spaceBetween={1} slidesPerView={2} navigation>
-                    {
-                        cards.map((index)=>{
-                            return(
-                                <SwiperSlide key={uuidv4()}>
-                                    <ClassCard data={index}/>
-                                </SwiperSlide>
-                            )
-                        })
-                    }
-                </Swiper>
             </div>
         </div>
     )
