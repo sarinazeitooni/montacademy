@@ -41,10 +41,10 @@ const GetInfoForm = () => {
                     majorid : option
                 }
             }).then((res) => {
-                toast('با موفقیت انجام شد');
+                toast(GetInfotexts.success);
             })
                 .catch((error) => {
-                    toast.error( 'خطا',error);
+                    toast.error( GetInfotexts.error,error);
                 })
     }
     return (

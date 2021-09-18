@@ -340,6 +340,8 @@ export const GetInfotexts = {
     nameInput : 'نام و نام خانوادگی',
     mobileInput : 'شماره موبایل',
     selectTitle : 'رشته تحصیلی',
+    success : 'درخواست مشاوره شما با موفقیت ثبت شد',
+    error : 'خطا',
     selectOptions : [
         {
             text : 'ریاضی',
