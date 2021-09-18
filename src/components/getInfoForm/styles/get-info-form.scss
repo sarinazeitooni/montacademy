@@ -52,6 +52,12 @@
             select{
                 cursor: pointer;
             }
+            svg{
+                position: absolute;
+                left: 4%;
+                color: $form-input-color;
+                top: 15%;
+            }
             input , select , .submit{
                 appearance: none;
                 color: $form-input-color;
@@ -67,12 +73,9 @@
                 @media screen and (max-width:1024px){
                     width: 220px;
                 }
-            }
-            svg{
-                position: absolute;
-                left: 4%;
-                color: $form-input-color;
-                top: 15%;
+                @media screen and (max-width:1000px){
+                    width: 170px;
+                }
             }
         }
         .submit-mobile , .submit{
