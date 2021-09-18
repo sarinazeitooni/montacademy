@@ -4,6 +4,9 @@
   margin: 0px 85px;
   position: relative;
   font-family: iranYekan;
+  @media screen and (max-width: 1750px) {
+    margin: 0;
+  }
   &:last-child {
     padding: 50px 0 75px 0;
     @media screen and (max-width: 768px) {
@@ -54,7 +57,7 @@
       display: none;
     }
     .swiper-button-next {
-      left: 25px;
+      left: 50px;
     }
     .swiper-button-prev {
       right: 20px;
