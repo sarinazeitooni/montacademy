@@ -422,3 +422,14 @@ export const classCardIcons = {
         mobile : 'https://www.monta.ir/monta-cademy/assets/images/banner-mobile-4.png'
     }
 ];
+ export const login = {
+     user: 'نام کاربری یا شماره موبایل',
+     password : 'رمز عبور',
+     forgotPass : 'رمز عبور خود را فراموش کرده ام !',
+     passPlaceHolder : 'رمز عبور خود را وارد نمایید',
+     userPlaceHolder : 'نام کاربری یا شماره موبایل خود را وارد نمایید',
+     login : 'ورود به منتا' ,
+     remember : 'مرا به خاطر داشته باش',
+     newUser : 'کاربر جدید هستید؟',
+     signUp : 'ثبت نام در منتا'
+ }

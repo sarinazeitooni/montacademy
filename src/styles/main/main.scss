@@ -25,6 +25,11 @@ body {
   ul {
     margin: 0;
   }
+  input,button{
+    outline: none;
+    border: none;
+    font-family: iranYekan;
+  }
   option{
     direction: rtl;
   }
