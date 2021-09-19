@@ -14,10 +14,10 @@ const Classes = ({title, extraTitle, mobileTitle, cards}) => {
         query: '(min-width: 320px) and (max-width:500px)'
     })
     const isMedium = useMediaQuery({
-        query: '(min-width: 500px) and (max-width: 1024px)'
+        query: '(min-width: 500px) and (max-width: 1220px)'
     })
     const isBig = useMediaQuery({
-        query: '(min-width: 1024px)'
+        query: '(min-width: 1220px)'
     });
     function size(){
         if(isSmall){
