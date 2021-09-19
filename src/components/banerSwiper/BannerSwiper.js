@@ -12,7 +12,7 @@ const BannerSwiper = ({images}) => {
         <div className='banner-swiper-container'>
             <Swiper
                 spaceBetween={1} slidesPerView={1} navigation={true} autoplay={{
-                "delay": 3500
+                "delay": 3000
             }}>
                 {
                     images.map((item)=>{

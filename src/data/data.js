@@ -143,7 +143,7 @@ export const montaCademyClassList = [
             {
                 index: 3,
                 teacherImageURL: 'https://www.monta.ir/monta-cademy/assets/images/sheikh.jpeg',
-                subject: 'عربی(عمومی+اختصاصی)',
+                subject: 'عربی (عمومی+اختصاصی)',
                 teacherName: 'باقر شیخ عطار',
                 sessionNumber: '55-65',
                 priceWithOff: '1,290,000',
