@@ -29,6 +29,12 @@ body {
     outline: none;
     border: none;
     font-family: iranYekan;
+    &::-webkit-inner-spin-button{
+      appearance: none;
+    }
+    &::-webkit-outer-spin-button{
+      appearance: none;
+    }
   }
   option{
     direction: rtl;
