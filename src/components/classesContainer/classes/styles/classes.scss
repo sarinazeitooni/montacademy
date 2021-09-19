@@ -31,6 +31,17 @@
     .swiper-button-prev {
       right: 20px;
     }
+    @media screen and (min-width: 1024px) and (max-width: 1110px) {
+      .swiper-slide{
+        &:first-child{
+          .card{
+            .teacher-img{
+              //width: 95%;
+            }
+          }
+        }
+      }
+    }
   }
   .text-container {
     background-color: white;
