@@ -332,7 +332,7 @@ export const menuData = {
         'منتآزمون',
         'تماس با ما'
     ],
-    loginAndSignUp : 'ورود/ثبت نام'
+    loginAndSignUp : 'ورود / ثبت نام'
 };
 export const GetInfotexts = {
     title : 'جهت دریافت اطلاعات بیشتر و ثبت نام فرم زیر را تکمیل کنید:',
@@ -340,7 +340,7 @@ export const GetInfotexts = {
     nameInput : 'نام و نام خانوادگی',
     mobileInput : 'شماره موبایل',
     selectTitle : 'رشته تحصیلی',
-    success : 'درخواست مشاوره شما با موفقیت ثبت شد',
+    success : 'درخواست مشاوره شما ثبت شد',
     error : 'خطا',
     selectOptions : [
         {

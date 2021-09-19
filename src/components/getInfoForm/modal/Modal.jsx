@@ -41,10 +41,10 @@ function Modal({show, close}) {
                 majorid : option
             }
         }).then((res) => {
-            toast('با موفقیت انجام شد');
+            toast(GetInfotexts.success);
         })
             .catch((error) => {
-                toast( 'خطا',error);
+                toast( GetInfotexts.error,error);
             })
         close();
     }
@@ -56,7 +56,7 @@ function Modal({show, close}) {
                         <PhoneInTalkIcon/>
                     </div>
                     <div className='title'>{GetInfotexts.title}</div>
-                    <input placeholder={GetInfotexts.nameInput} value={name} className={nameClass} id='name' onChange={(e) => {
+                    <input autoFocus placeholder={GetInfotexts.nameInput} value={name} className={nameClass} id='name' onChange={(e) => {
                         ChangeHandler(setName, e)
                     }} type='text'/>
                     <input placeholder={GetInfotexts.mobileInput} value={number} className={numberClass} id='number'

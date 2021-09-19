@@ -25,6 +25,17 @@ body {
   ul {
     margin: 0;
   }
+  option{
+    direction: rtl;
+  }
+  .loading{
+    background-color: white;
+    width: 100%;
+    img{
+      margin: 0 auto;
+      display: block;
+    }
+  }
   .classes-container, .footer-bottom-container, .modal-pop-up, .icon-container, .form-title, .form-title-mobile,
   .form-data-container, .header, .schedule-container, .schedule-mobile-container {
     margin: 0 auto;

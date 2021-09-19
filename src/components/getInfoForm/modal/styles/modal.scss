@@ -25,6 +25,9 @@
       position: absolute;
       left: 8%;
       top: 63%;
+      @media screen and (max-width: 282px){
+        top: 58%;
+      }
     }
     .icon-container {
       color: red;

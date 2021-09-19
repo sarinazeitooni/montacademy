@@ -42,7 +42,7 @@ const Classes = ({title, extraTitle, mobileTitle, cards}) => {
             <hr className='line'/>
             <div className='cards-container'>
                 <Swiper
-                    spaceBetween={1} slidesPerView={size()}  navigation={cards.length>4}>
+                    spaceBetween={1} slidesPerView={size()}  navigation={cards.length>4 || isMedium || isSmall}>
                     {
                         cards.map((index) => {
                             return (

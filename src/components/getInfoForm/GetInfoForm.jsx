@@ -53,7 +53,7 @@ const GetInfoForm = () => {
             <h3 className='form-title-mobile'>{GetInfotexts.mobileTitle}</h3>
             <div className='form-data-container'>
                 <div className='data-fields'>
-                    <input className={nameClass} value={name} type='text' onChange={(e)=>{ChangeHandler(setName,e )}}  placeholder={GetInfotexts.nameInput}/>
+                    <input autoFocus className={nameClass} value={name} type='text' onChange={(e)=>{ChangeHandler(setName,e )}}  placeholder={GetInfotexts.nameInput}/>
                 </div>
                 <div className='data-fields'>
                     <input className={numberClass} value={number} type='number' onChange={(e)=>{ChangeHandler(setNumber,e )}}  placeholder={GetInfotexts.mobileInput}/>

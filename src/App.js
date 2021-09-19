@@ -1,3 +1,4 @@
+import React from 'react';
 import HeaderContainer from "./components/header/HeaderContainer";
 import './styles/fonts/fonts.css';
 import './styles/main/main.scss';
@@ -12,15 +13,24 @@ import Schedule from "./components/montaAcademySchedule/Schedule";
 import WhyMonta from "./components/whyMonta/WhyMonta";
 import {montaCademyOptions} from "./data/data";
 function App() {
+    const [time,setTime] = React.useState(false);
+    setTimeout(function(){ setTime(true) }, 1500);
   return (
     <div className="App">
-        <HeaderContainer/>
-        <BannerSwiper images={images}/>
-        <GetInfoForm/>
-        <ClassesContainer data={montaCademyClassList}/>
-        <Schedule title={schedule.title} items={schedule.items}/>
-        <WhyMonta title={montaCademyOptions.title} data={montaCademyOptions.options}/>
-        <FooterContainer/>
+        {
+            time ? <React.Fragment>
+                <HeaderContainer/>
+                <BannerSwiper images={images}/>
+                <GetInfoForm/>
+                <ClassesContainer data={montaCademyClassList}/>
+                <Schedule title={schedule.title} items={schedule.items}/>
+                <WhyMonta title={montaCademyOptions.title} data={montaCademyOptions.options}/>
+                <FooterContainer/>
+            </React.Fragment> : <div className='loading'>
+                <img alt='loading' src="https://www.monta.ir/client_resources/images/img/loader.gif"/>
+            </div>
+        }
+
     </div>
   )
 }
