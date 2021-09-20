@@ -3,8 +3,8 @@
   background-color: $menuItemBack;
   border: 1px solid $form-input-border;
   border-radius: 12px;
-  margin: 100px auto;
-  width: 260px;
+  margin: 105px auto;
+  width: 300px;
   padding: 1.7rem 1rem;
   direction: rtl;
   font-family: iranYekan;
@@ -13,9 +13,9 @@
     display: block;
     margin: 0 auto 20px auto;
   }
-.input-container{
-  margin: 0 0 5px 0;
-}
+  .input-container{
+    margin: 0 0 5px 0;
+  }
   .input-title {
     line-height: 23px;
     text-align: right;
@@ -71,6 +71,7 @@
     text-align: center;
     font-size: 12px;
     .sign-up {
+      padding-right: 5px;
       color: $forgot-pass;
     }
   }
