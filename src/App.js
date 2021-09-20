@@ -30,7 +30,6 @@ function App() {
                 <img alt='loading' src="https://www.monta.ir/client_resources/images/img/loader.gif"/>
             </div>
         }
-
     </div>
   )
 }

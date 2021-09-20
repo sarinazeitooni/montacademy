@@ -325,12 +325,14 @@ export const MontAcademyScheduleTexts = {
 export const menuData = {
     img : 'https://www.monta.ir/landings/images/logo.svg',
     items : [
-        'درباره ی ما',
-        'بانک سوال',
-        'آمادگی کنکور',
-        'منتآکادمی',
-        'منتآزمون',
-        'تماس با ما'
+        {text : 'درباره ی ما',
+        href: '#footer'},
+        {text:'بانک سوال'},
+        {text:'آمادگی کنکور'},
+        {text:'منتآکادمی'},
+        {text:'منتآزمون'},
+        {text:'تماس با ما',
+            href: '#footer'}
     ],
     loginAndSignUp : 'ورود / ثبت نام'
 };
